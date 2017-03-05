@@ -7,17 +7,22 @@
     "test": "jest"
   },
   "dependencies": {
+    "immutability-helper": "^2.1.2",
     "react": "15.4.2",
     "react-native": "0.42.0",
     "react-native-navigation": "^2.0.0-experimental.236",
     "react-redux": "^5.0.3",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "redux-logger": "^2.8.2",
+    "redux-persist": "^4.4.2",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "babel-jest": "19.0.0",
     "babel-preset-react-native": "1.9.1",
     "jest": "19.0.2",
-    "react-test-renderer": "15.4.2"
+    "react-test-renderer": "15.4.2",
+    "flow-bin": "^0.37.4"
   },
   "jest": {
     "preset": "react-native"
