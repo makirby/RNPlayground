@@ -1,15 +1,16 @@
 /**
  * # index.js
  * Reducer Module
+ * @providesModule reducers
  * @flow
  */
 'use strict'
 
 import {combineReducers} from 'redux'
-import user from './user'
+import userReducer from './user/reducer'
 
 const rootReducer = combineReducers({
-  user
+  userReducer
 })
 
 export default rootReducer

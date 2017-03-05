@@ -3,14 +3,10 @@
  * User reducer
  * @flow
  */
+'use strict'
 
-import type {UserAction} from '../actions/user'
-
-export type UserState = {
-  isLoggedIn: boolean;
-  id: ?string;
-  sessionToken: ?string;
-}
+import type {UserAction, UserState} from './types'
+import * as actions from './types'
 
 const initialState = {
   isLoggedIn: false,
@@ -19,15 +15,14 @@ const initialState = {
 }
 
 function user (state: UserState = initialState, action: UserAction) {
-
   switch (action.type) {
-    case 'LOGGED_IN': {
+    case actions.LOGIN: {
       return {
         ...state,
         isLoggedIn: true
       }
     }
-    case 'LOGGED_OUT': {
+    case actions.LOGOUT: {
        return {
         ...state,
         isLoggedIn: false
@@ -38,3 +33,5 @@ function user (state: UserState = initialState, action: UserAction) {
     }
   } 
 }
+
+export default user
