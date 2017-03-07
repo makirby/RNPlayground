@@ -1,12 +1,12 @@
 /**
- * # user.js
+ * # reducer.js
  * User reducer
  * @flow
  */
 'use strict'
 
 import type {UserAction, UserState} from './types'
-import * as actions from './types'
+import * as types from './types'
 
 const initialState = {
   isLoggedIn: false,
@@ -16,13 +16,13 @@ const initialState = {
 
 function user (state: UserState = initialState, action: UserAction) {
   switch (action.type) {
-    case actions.LOGIN: {
+    case types.LOGIN: {
       return {
         ...state,
         isLoggedIn: true
       }
     }
-    case actions.LOGOUT: {
+    case types.LOGOUT: {
        return {
         ...state,
         isLoggedIn: false

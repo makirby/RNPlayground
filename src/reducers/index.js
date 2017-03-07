@@ -7,10 +7,14 @@
 'use strict'
 
 import {combineReducers} from 'redux'
-import userReducer from './user/reducer'
+import user from './user'
+import navigation from './navigation'
+
+user.Reducer
 
 const rootReducer = combineReducers({
-  userReducer
+  user: user.Reducer,
+  navigation: navigation.Reducer
 })
 
 export default rootReducer

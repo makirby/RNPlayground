@@ -4,9 +4,10 @@
  */
 'use strict'
 
-import type {Action} from '../actions/types'
+// TODO: add global types setup
+// import type {Action} from '../actions/types'
 
-function track (action: Action): void {
+function track (action: any): void {
   switch (action.type) {
     default: {
       // log

@@ -1,5 +1,5 @@
 /**
- * # user.js
+ * # actions.js
  * User Actions
  * @flow
  */

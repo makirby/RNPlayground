@@ -11,26 +11,19 @@ import {Provider} from 'react-redux'
 import configureStore from './store/configure'
 import AppContainer from './RLAppContainer'
 
-function setup () : ReactClass<{}> {
-  class Root extends React.Component {
+const store = configureStore()
+
+function setup () {
+  class Root {
     state : {
       isLoading: boolean;
       store: any;
     }
     constructor () {
-      super()
       this.state = {
         isLoading: true,
-        store: configureStore(() => this.setState({isLoading: false}))
+        store: configureStore()
       }
-    }
-    render () {
-      if (this.state.isLoading) {
-        return null
-      }
-      return (
-        <AppContainer />
-      )
     }
   }
   return Root
