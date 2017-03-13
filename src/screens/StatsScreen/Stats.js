@@ -1,20 +1,20 @@
 /**
- * # Splash.js
+ * # Stats.js
  * @flow
  */
 
 import React from 'react'
 import PageWrapper from '../../components/RLPageWrapper'
 
-class Splash extends React.PureComponent {
+class Stats extends React.PureComponent {
   render() {
     return (
       <PageWrapper
-        title="Splash Screen"
-        text="Loading Application"
+        title="Stats Screen"
+        text="This is the Stats screen"
       />
     )
   }
 }
 
-export default Splash
+export default Stats

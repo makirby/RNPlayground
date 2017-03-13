@@ -1,9 +1,8 @@
 /**
- * # RLStylingHelpers.js
+ * # StylingHelpers.js
  * Styling helper functions
  * @flow
  */
-'use strict'
 
 import {Dimensions} from 'react-native'
 

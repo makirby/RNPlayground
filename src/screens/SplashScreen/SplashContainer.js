@@ -3,10 +3,9 @@
  * Container component for splash screen
  * @flow
  */
-'use strict'
 
 import Splash from './Splash'
-import {connect} from 'react-redux';
+import {connect} from 'react-redux'
 
 function mapStateToProps(state) {
   return {}

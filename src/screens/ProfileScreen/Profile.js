@@ -1,20 +1,20 @@
 /**
- * # Splash.js
+ * # Profile.js
  * @flow
  */
 
 import React from 'react'
 import PageWrapper from '../../components/RLPageWrapper'
 
-class Splash extends React.PureComponent {
+class Profile extends React.PureComponent {
   render() {
     return (
       <PageWrapper
-        title="Splash Screen"
-        text="Loading Application"
+        title="Profile Screen"
+        text="This is the Profile screen"
       />
     )
   }
 }
 
-export default Splash
+export default Profile

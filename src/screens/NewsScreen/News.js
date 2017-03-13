@@ -1,20 +1,20 @@
 /**
- * # Splash.js
+ * # News.js
  * @flow
  */
 
 import React from 'react'
 import PageWrapper from '../../components/RLPageWrapper'
 
-class Splash extends React.PureComponent {
+class News extends React.PureComponent {
   render() {
     return (
       <PageWrapper
-        title="Splash Screen"
-        text="Loading Application"
+        title="News Screen"
+        text="This is the News screen"
       />
     )
   }
 }
 
-export default Splash
+export default News

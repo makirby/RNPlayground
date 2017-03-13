@@ -4,7 +4,6 @@
  * and store
  * @flow
  */
-'use strict'
 
 import React from 'react'
 import {Provider} from 'react-redux'
@@ -13,12 +12,13 @@ import AppContainer from './RLAppContainer'
 
 const store = configureStore()
 
-function setup () {
+function setup() {
   class Root {
-    state : {
+    state: {
       isLoading: boolean;
       store: any;
     }
+    
     constructor () {
       this.state = {
         isLoading: true,

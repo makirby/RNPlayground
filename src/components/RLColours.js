@@ -3,7 +3,6 @@
  * Provides coulours for the application components
  * @flow
  */
-'use strict'
 
 export default {
   actionText: '#3FB4CF',
@@ -12,4 +11,4 @@ export default {
   lightText: '#7F91A7',
   cellBorder: '#EEEEEE',
   darkBackground: '#183E63'
-}
+};

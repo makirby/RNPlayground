@@ -2,7 +2,6 @@
  * # analytics.js
  *
  */
-'use strict'
 
 import track from './track'
 

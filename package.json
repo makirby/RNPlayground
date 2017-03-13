@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "start": "adb reverse tcp:8081 tcp:8081; watchman watch-del-all; react-native start",
+    "xcode": "open ios/playground.xcodeproj",
+    "android": "cd android && ./gradlew installDebug"
   },
   "dependencies": {
     "immutability-helper": "^2.1.2",
@@ -18,11 +20,18 @@
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
+    "babel-eslint": "^7.1.1",
     "babel-jest": "19.0.0",
     "babel-preset-react-native": "1.9.1",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "eslint": "^3.17.1",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-flowtype": "^2.30.3",
+    "eslint-plugin-react": "^6.10.0",
+    "eslint-plugin-react-native": "^2.3.1",
+    "flow-bin": "^0.37.4",
     "jest": "19.0.2",
-    "react-test-renderer": "15.4.2",
-    "flow-bin": "^0.37.4"
+    "react-test-renderer": "15.4.2"
   },
   "jest": {
     "preset": "react-native"

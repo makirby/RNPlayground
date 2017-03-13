@@ -4,8 +4,6 @@
  * @flow
  */
 
-'use strict'
-
 const environment = {
   serverUrl: '',
   version: 1,

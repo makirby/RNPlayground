@@ -1,20 +1,20 @@
 /**
- * # Splash.js
+ * # Welcome.js
  * @flow
  */
 
 import React from 'react'
 import PageWrapper from '../../components/RLPageWrapper'
 
-class Splash extends React.PureComponent {
+class Welcome extends React.PureComponent {
   render() {
     return (
       <PageWrapper
-        title="Splash Screen"
-        text="Loading Application"
+        title="Welcome Screen"
+        text="This is the welcome screen"
       />
     )
   }
 }
 
-export default Splash
+export default Welcome

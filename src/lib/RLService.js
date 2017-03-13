@@ -3,5 +3,4 @@
  * Service consumer
  * @flow
  */
-'use strict'
 

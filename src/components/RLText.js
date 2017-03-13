@@ -1,13 +1,12 @@
 /**
  * # RLText.js
- *
  * @providesModule RLText
  * @flow
  */
 'use strict'
 
 import React from 'react'
-import {StyleSheet,Text as NativeText} from 'react-native'
+import {StyleSheet, Text as NativeText} from 'react-native'
 import env from '../env'
 import {Normalise} from '../lib/StyleHelpers'
 import Colours from './RLColours'
