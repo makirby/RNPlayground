@@ -1,5 +1,5 @@
 /**
- * # Styling.js
+ * # RLStylingHelpers.js
  * Styling helper functions
  * @flow
  */

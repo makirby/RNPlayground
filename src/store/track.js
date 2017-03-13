@@ -1,5 +1,6 @@
 /**
  * # track.js
+ * Fuction to track actions seperately from main redux flow
  * @flow
  */
 'use strict'
