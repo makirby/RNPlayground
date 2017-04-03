@@ -4,7 +4,7 @@
  * @flow
  */
 
-import Ranking from './Ranking'
+import Ranking from '../components/Ranking'
 import {connect} from 'react-redux'
 
 function mapStateToProps(state) {

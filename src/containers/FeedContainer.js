@@ -1,10 +1,10 @@
 /**
  * # FeedContainer.js
- * Container component for Feed screen
+ * Container component for Feed
  * @flow
  */
 
-import Feed from './Feed'
+import Feed from '../components/Feed'
 import {connect} from 'react-redux'
 
 function mapStateToProps(state) {

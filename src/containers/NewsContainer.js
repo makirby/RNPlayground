@@ -1,10 +1,10 @@
 /**
  * # NewsContainer.js
- * Container component for News screen
+ * Container component for News
  * @flow
  */
 
-import News from './News'
+import News from '../components/News'
 import {connect} from 'react-redux'
 
 function mapStateToProps(state) {

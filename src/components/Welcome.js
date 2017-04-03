@@ -4,7 +4,7 @@
  */
 
 import React from 'react'
-import PageWrapper from '../../components/RLPageWrapper'
+import PageWrapper from '../components/RLPageWrapper'
 
 class Welcome extends React.PureComponent {
   render() {

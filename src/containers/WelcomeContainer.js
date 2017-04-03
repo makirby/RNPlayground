@@ -3,7 +3,7 @@
  * Container component for Welcome screen
  * @flow
  */
-import Welcome from './Welcome'
+import Welcome from '../components/Welcome'
 import {connect} from 'react-redux'
 
 function mapStateToProps(state) {

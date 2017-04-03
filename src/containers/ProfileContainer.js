@@ -1,10 +1,10 @@
 /**
  * # ProfileContainer.js
- * Container component for Profile screen
+ * Container component for Profile
  * @flow
  */
 
-import Profile from './Profile'
+import Profile from '../components/Profile'
 import {connect} from 'react-redux'
 
 function mapStateToProps(state) {

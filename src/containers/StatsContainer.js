@@ -1,10 +1,10 @@
 /**
  * # StatsContainer.js
- * Container component for Stats screen
+ * Container component for Stats
  * @flow
  */
 
-import Stats from './Stats'
+import Stats from '../components/Stats'
 import {connect} from 'react-redux'
 
 function mapStateToProps(state) {

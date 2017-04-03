@@ -1,11 +1,11 @@
 /**
  * # LoginContainer.js
- * Container component for login screen
+ * Container component for login
  * @flow
  */
 
-import Login from './Login';
-import { connect } from 'react-redux';
+import Login from '../components/Login'
+import {connect} from 'react-redux'
 
 function mapStateToProps(state: any) {
   return {}

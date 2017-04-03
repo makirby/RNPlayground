@@ -1,10 +1,10 @@
 /**
  * # LiveContainer.js
- * Container component for Live screen
+ * Container component for Live
  * @flow
  */
 
-import Live from './Live'
+import Live from '../components/Live'
 import {connect} from 'react-redux'
 
 function mapStateToProps(state) {
