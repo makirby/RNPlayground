@@ -3,6 +3,7 @@
     "es6": true,
     "node": true
   },
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 8,
     "sourceType": "module",
@@ -15,7 +16,6 @@
   "plugins": [
     "react",
     "react-native",
-    "babel",
     "flowtype"
   ],
   "rules": {
@@ -414,7 +414,6 @@
     "react/no-did-update-set-state": "error",
     "react/no-direct-mutation-state": "error",
     "react/no-is-mounted": "error",
-    "react/no-multi-comp": "error",
     "react/no-set-state": 0,
     "react/no-string-refs": 0,
     "react/no-unknown-property": 0,
@@ -497,20 +496,12 @@
       "never"
     ],
     "flowtype/no-primitive-constructor-types": 2,
-    "flowtype/no-weak-types": 2,
+    "flowtype/no-weak-types": 1,
     "flowtype/object-type-delimiter": [
       2,
       "comma"
     ],
     "flowtype/require-parameter-type": 2,
-    "flowtype/require-return-type": [
-      2,
-      "always",
-      {
-        "annotateUndefined":"always",
-        "excludeMatching":["render"]
-      }
-    ],
     "flowtype/require-valid-file-annotation": 2,
     "flowtype/semi": [
       2,
