@@ -5,7 +5,6 @@
  * @flow
  */
 
-import AppContainer from "./RLApp"
 import Constants from "./lib/constants"
 import {Navigation} from "react-native-navigation"
 import {Platform} from "react-native"

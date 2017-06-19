@@ -1,5 +1,0 @@
-/**
- * # RLAppContainer
- * Application Container
- */
-
