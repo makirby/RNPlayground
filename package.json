@@ -12,24 +12,24 @@
   },
   "dependencies": {
     "immutability-helper": "^2.2.0",
-    "mobx": "^3.1.9",
-    "mobx-react": "^4.1.8",
-    "react": "16.0.0-alpha.6",
-    "react-native": "^0.44.0",
-    "react-native-navigation": "https://github.com/wix/react-native-navigation#v2"
+    "mobx": "^3.1.16",
+    "mobx-react": "^4.2.1",
+    "react": "16.0.0-alpha.12",
+    "react-native": "^0.45.1",
+    "react-native-navigation": "1.1.103"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "babel-jest": "20.0.0",
-    "babel-preset-react-native": "1.9.1",
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.0.0",
     "babel-preset-react-native-stage-0": "^1.0.1",
-    "eslint": "^3.19.0",
-    "eslint-plugin-flowtype": "^2.32.1",
-    "eslint-plugin-react": "^7.0.0",
+    "eslint": "^4.0.0",
+    "eslint-plugin-flowtype": "^2.34.0",
+    "eslint-plugin-react": "^7.1.0",
     "eslint-plugin-react-native": "^2.3.1",
-    "flow-bin": "^0.44.0",
-    "jest": "20.0.0",
-    "react-test-renderer": "16.0.0-alpha.6"
+    "flow-bin": "^0.46.0",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.12"
   },
   "jest": {
     "preset": "react-native"

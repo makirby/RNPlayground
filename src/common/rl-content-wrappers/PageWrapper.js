@@ -2,24 +2,22 @@
  * # RLPageWrapper.js
  * @flow
  */
-'use strict'
 
-import React from 'react'
-import {
-  View,
-  StyleSheet
-} from 'react-native'
-import {Heading1, Paragraph} from './RLText'
+import {Heading1, Paragraph} from "../rl-style"
+import {StyleSheet, View} from "react-native"
 
-type Props = {
-  style?: any;
-  title?: string;
-  text?: string;
+import React from "react"
+
+type PropsType = {
+  style?: any,
+  title?: string,
+  text?: string,
   children?: any
-}
+};
 
-const RLPageWrapper = (props: Props): React.Element<*> => {
-  const title = props.title && <Heading1 style={styles.title}>{props.title}</Heading1>
+const RLPageWrapper = (props: PropsType): React.Element<*> => {
+  const title
+    = props.title && <Heading1 style={styles.title}>{props.title}</Heading1>
   return (
     <View style={[styles.container, props.style]}>
       {title}
@@ -34,17 +32,17 @@ const RLPageWrapper = (props: Props): React.Element<*> => {
 let styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: "white",
     padding: 30,
     paddingTop: 75,
-    alignItems: 'center'
+    alignItems: "center"
   },
   title: {
-    textAlign: 'center',
+    textAlign: "center",
     marginBottom: 10
   },
   text: {
-    textAlign: 'center',
+    textAlign: "center",
     marginBottom: 35
   }
 })

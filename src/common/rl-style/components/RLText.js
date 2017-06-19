@@ -4,11 +4,12 @@
  * @flow
  */
 
-import React from 'react'
-import {StyleSheet, Text as NativeText} from 'react-native'
-import env from 'src/env'
-import {normalise} from '../lib/StyleHelpers'
+import {Text as NativeText, StyleSheet} from 'react-native'
+
 import Colours from '../lib/RLColours'
+import React from 'react'
+import env from '../../../env'
+import {normalise} from '../lib/StyleHelpers'
 
 export function Text({style, ...props}: Object) {
   return <NativeText style={[styles.font, style]} {...props} />

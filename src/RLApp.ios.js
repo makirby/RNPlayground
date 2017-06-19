@@ -1,7 +1,5 @@
-
 /**
  * # RLAppContainer
  * Application Container
- * @flow
  */
 

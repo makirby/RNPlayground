@@ -22,7 +22,9 @@ export default class MobxRnnProvider extends Provider {
     const baseStores = this.context.mobxStores
     if (baseStores) {
       for (const key in baseStores) {
-        stores[key] = baseStores[key]
+        if (Object.prototype.hasOwnProperty.call(baseStores, key)) {
+          stores[key] = baseStores[key]
+        }
       }
     }
 

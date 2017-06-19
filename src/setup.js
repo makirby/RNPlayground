@@ -5,28 +5,52 @@
  * @flow
  */
 
-import React from 'react'
-import {Navigation} from 'react-native-navigation'
-import Provider from 'src/lib/provider'
-import Stores from 'src/store'
-import AppContainer from './RLApp'
+import AppContainer from "./RLApp"
+import Constants from "./lib/constants"
+import {Navigation} from "react-native-navigation"
+import {Platform} from "react-native"
+import Provider from "./lib/provider"
+import React from "react"
+import Stores from "./store"
+import TabBar from "./lib/config/TabBar"
+import {registerScreens} from "./registerScreens"
 
 function setup() {
-  class Root extends React.Component {
-    state: {
-      isLoading: boolean
-    };
-    
-    constructor() {
-      super()
-      this.state = {
-        isLoading: true
-      }
-    }
+  // Bootstrap scenes with mobx store
+  registerScreens(Stores, Provider)
 
-  }
-  
-  return Root
+  // Start app with react navigation
+  Navigation.startTabBasedApp({
+    tabs: [
+      {
+        ...Constants.Screens.FEED_TAB
+      },
+      {
+        ...Constants.Screens.LIVE_TAB
+      },
+      {
+        ...Constants.Screens.PROFILE_TAB
+      },
+      {
+        ...Constants.Screens.LEADERBOARD_TAB
+      }
+    ],
+    ...Platform.select({
+      ios: {
+        tabsStyle: TabBar.Main
+      },
+      android: {
+        appStyle: TabBar.Main
+      }
+    })
+    // ,
+    // drawer: {
+    //   left: {
+    //     screen: Constants.Screens.DRAWER.screen
+    //   },
+    //   disableOpenGesture: false
+    // }
+  })
 }
 
 export default setup

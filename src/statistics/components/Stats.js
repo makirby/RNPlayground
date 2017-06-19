@@ -3,8 +3,8 @@
  * @flow
  */
 
+import {PageWrapper} from '../../common/rl-content-wrappers'
 import React from 'react'
-import {PageWrapper} from 'src/common/rl-content-wrappers'
 
 class Stats extends React.PureComponent {
   render() {

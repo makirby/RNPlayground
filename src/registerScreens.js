@@ -3,18 +3,16 @@
  * @flow
  */
 
+import Constants from './lib/constants'
+import FeedScreen from './feed/containers/FeedScreen'
+import LiveScreen from './live/containers/LiveScreen'
+import LoginScreen from './authentication/containers/LoginScreen'
 import {Navigation} from 'react-native-navigation'
-
-import Constants from 'src/lib/constants'
-
-import RankingScreen from 'src/statistics/containers/RankingScreen'
-import FeedScreen from 'src/feed/containers/FeedScreen'
-import ProfileModal from 'src/profile/containers/ProfileScreen'
-import LiveScreen from 'src/live/containers/LiveScreen'
-import NewsScreen from 'src/news/containers/NewsScreen'
-import LoginScreen from 'src/authentication/containers/LoginScreen'
-import SplashScreen from 'src/authentication/containers/SplashScreen'
-import WelcomeScreen from 'src/authentication/containers/WelcomeScreen'
+import NewsScreen from './news/containers/NewsScreen'
+import ProfileModal from './profile/containers/ProfileScreen'
+import RankingScreen from './statistics/containers/RankingScreen'
+import SplashScreen from './authentication/containers/SplashScreen'
+import WelcomeScreen from './authentication/containers/WelcomeScreen'
 
 export function registerScreens(store: {}, Provider: {}) {
   Navigation.registerComponent(Constants.Screens.FEED_TAB.screen, () => FeedScreen, store, Provider)
