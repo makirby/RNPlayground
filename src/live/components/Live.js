@@ -3,15 +3,15 @@
  * @flow
  */
 
-import {PageWrapper} from '../../common/rl-content-wrappers'
+import {RLScrollView} from '../../common/rl-content-wrappers'
 import React from 'react'
 
 class Live extends React.PureComponent {
   render() {
     return (
-      <PageWrapper
+      <RLScrollView
         title="Live Screen"
-        text="This is the Live screen"
+        subtitle="This is the Live screen"
       />
     )
   }

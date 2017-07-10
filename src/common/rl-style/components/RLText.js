@@ -15,6 +15,10 @@ export function Text({style, ...props}: Object) {
   return <NativeText style={[styles.font, style]} {...props} />
 }
 
+export function PageHeading({style, ...props}: Object) {
+  return <NativeText style={[styles.font, styles.page, style]} {...props} />
+}
+
 export function Heading1({style, ...props}: Object) {
   return <NativeText style={[styles.font, styles.h1, style]} {...props} />
 }
@@ -38,6 +42,13 @@ export function Small({style, ...props}: Object) {
 const styles = StyleSheet.create({
   font: {
     fontFamily: env.fontFamily
+  },
+  page: {
+    fontSize: normalise(28),
+    lineHeight: normalise(34),
+    color: Colours.darkText,
+    fontWeight: 'bold',
+    letterSpacing: -1
   },
   h1: {
     fontSize: normalise(24),

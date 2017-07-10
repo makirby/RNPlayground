@@ -29,7 +29,7 @@ const RLPageWrapper = (props: PropsType): React.Element<*> => {
   )
 }
 
-let styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "white",

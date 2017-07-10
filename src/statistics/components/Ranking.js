@@ -3,15 +3,15 @@
  * @flow
  */
 
-import {PageWrapper} from '../../common/rl-content-wrappers'
+import {RLScrollView} from '../../common/rl-content-wrappers'
 import React from 'react'
 
 class Ranking extends React.PureComponent {
   render() {
     return (
-      <PageWrapper
+      <RLScrollView
         title="Ranking Screen"
-        text="This is the Ranking screen"
+        subtitle="This is the Ranking screen"
       />
     )
   }

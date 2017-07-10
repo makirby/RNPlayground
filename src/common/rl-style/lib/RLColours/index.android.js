@@ -1,6 +1,4 @@
 /**
- * # RLColours.js
- * Provides coulours for the application components
  * @flow
  */
 

@@ -3,15 +3,15 @@
  * @flow
  */
 
-import {PageWrapper} from '../../common/rl-content-wrappers'
+import {RLScrollView} from '../../common/rl-content-wrappers'
 import React from 'react'
 
 class Feed extends React.PureComponent {
   render() {
     return (
-      <PageWrapper
+      <RLScrollView
         title="Feed Screen"
-        text="This is the Feed screen"
+        subtitle="This is the Feed screen"
       />
     )
   }

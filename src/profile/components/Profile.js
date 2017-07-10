@@ -3,15 +3,15 @@
  * @flow
  */
 
-import {PageWrapper} from '../../common/rl-content-wrappers'
+import {RLScrollView} from '../../common/rl-content-wrappers'
 import React from 'react'
 
 class Profile extends React.PureComponent {
   render() {
     return (
-      <PageWrapper
+      <RLScrollView
         title="Profile Screen"
-        text="This is the Profile screen"
+        subtitle="This is the Profile screen"
       />
     )
   }
