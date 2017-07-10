@@ -9,7 +9,7 @@ import LiveScreen from "./live/containers/LiveScreen"
 import LoginScreen from "./authentication/containers/LoginScreen"
 import {Navigation} from "react-native-navigation"
 import NewsScreen from "./news/containers/NewsScreen"
-import ProfileModal from "./profile/containers/ProfileScreen"
+import ProfileScreen from "./profile/containers/ProfileScreen"
 import RankingScreen from "./statistics/containers/RankingScreen"
 import SplashScreen from "./authentication/containers/SplashScreen"
 import WelcomeScreen from "./authentication/containers/WelcomeScreen"
@@ -35,7 +35,7 @@ export function registerScreens(store: {}, Provider: {}) {
   )
   Navigation.registerComponent(
     Constants.Screens.PROFILE_TAB.screen,
-    () => ProfileModal,
+    () => ProfileScreen,
     store,
     Provider
   )
