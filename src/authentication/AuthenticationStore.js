@@ -4,10 +4,10 @@
 
 import {action, observable} from "mobx"
 
-import {Account} from '../authentication/models'
+import {Account} from './models'
 import {persist} from "mobx-persist"
 
-class Store {
+class AuthenticationStore {
   @persist("object", Account) @observable current = new Account();
   @persist @observable authorized = false;
 
@@ -33,4 +33,4 @@ class Store {
   };
 }
 
-export default new Store()
+export default new AuthenticationStore()

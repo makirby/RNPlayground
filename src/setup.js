@@ -28,10 +28,10 @@ function setup() {
         ...Constants.Screens.LIVE_TAB
       },
       {
-        ...Constants.Screens.PROFILE_TAB
+        ...Constants.Screens.LEADERBOARD_TAB
       },
       {
-        ...Constants.Screens.LEADERBOARD_TAB
+        ...Constants.Screens.PROFILE_TAB
       }
     ],
     ...Platform.select({
@@ -42,13 +42,6 @@ function setup() {
         appStyle: TabBar.Main
       }
     })
-    // ,
-    // drawer: {
-    //   left: {
-    //     screen: Constants.Screens.DRAWER.screen
-    //   },
-    //   disableOpenGesture: false
-    // }
   })
 }
 

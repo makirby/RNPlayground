@@ -16,13 +16,17 @@ type PropsType = {
 
 const RLScrollView = (props: PropsType): React.Element<*> => {
   const title
-    = props.title && <PageHeading style={styles.title}>{props.title}</PageHeading>
+    = Boolean(props.title)
+    && <PageHeading style={styles.title}>{props.title}</PageHeading>
+  const subtitle
+    = Boolean(props.subtitle)
+    && <Paragraph style={styles.subtitle}>
+        {props.subtitle}
+      </Paragraph>
   return (
     <ScrollView style={[styles.container, props.style]}>
       {title}
-      <Paragraph style={styles.subtitle}>
-        {props.subTitle}
-      </Paragraph>
+      {subtitle}
       {props.children}
     </ScrollView>
   )

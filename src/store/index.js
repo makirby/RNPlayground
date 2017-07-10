@@ -2,18 +2,18 @@
  * @flow
  */
 
-import App from './App'
-import Feed from './Feed'
-import Leaderboard from './Leaderboard'
-import Live from './Live'
-import Player from './Player'
+import {Store as Authentication} from '../authentication'
+import {Store as Feed} from '../feed'
+import {Store as Live} from '../live'
+import {Store as Profile} from '../profile'
+import {Store as Statistics} from '../statistics'
 
 const stores = {
-  App,
+  Authentication,
   Feed,
-  Leaderboard,
+  Statistics,
   Live,
-  Player
+  Profile
 }
 
 // you can hydrate stores here with mobx-persist
