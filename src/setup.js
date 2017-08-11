@@ -10,7 +10,7 @@ import {Navigation} from "react-native-navigation"
 import {Platform} from "react-native"
 import Provider from "./lib/provider"
 import React from "react"
-import Stores from "./store"
+import Stores from "./lib/stores"
 import TabBar from "./lib/config/TabBar"
 import {registerScreens} from "./registerScreens"
 

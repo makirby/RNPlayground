@@ -3,7 +3,8 @@
  */
 
 export default {
-  tabBarButtonColor: "#007aff",
+  tabBarButtonColor: "#E2E2E2", // "#007aff"
+  tabBarSelectedButtonColor: "#007aff",
   tabBarBackgroundColor: "#ffffff",
   tabBarTranslucent: true
 }

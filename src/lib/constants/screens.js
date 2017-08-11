@@ -2,6 +2,8 @@
  * @flow
  */
 
+import Icons from './Icons'
+
 export default {
   DRAWER: {
     screen: 'app.DrawerScreen'
@@ -9,24 +11,30 @@ export default {
   FEED_TAB: {
     screen: 'app.FeedTabScreen',
     title: 'Feed',
-    label: 'Feed'
-    // icon: Images.TAB_1,
-    // selectedIcon: Images.TAB_1_selected,
+    label: 'Feed',
+    icon: Icons.FEED_TAB,
+    selectedIcon: Icons.FEED_TAB_SELECTED
   },
   LIVE_TAB: {
     screen: 'app.LiveTabScreen',
     title: 'Live',
-    label: 'Live'
+    label: 'Live',
+    icon: Icons.LIVE_TAB,
+    selectedIcon: Icons.LIVE_TAB_SELECTED
   },
   LEADERBOARD_TAB: {
     screen: 'app.LeaderboardTabScreen',
     title: 'Leaderboard',
-    label: 'Leaderboard'
+    label: 'Leaderboard',
+    icon: Icons.LEADERBOARD_TAB,
+    selectedIcon: Icons.LEADERBOARD_TAB_SELECTED
   },
   PROFILE_TAB: {
     screen: 'app.ProfileTabScreen',
     title: 'Profile',
-    label: 'Profile'
+    label: 'Profile',
+    icon: Icons.PROFILE_TAB,
+    selectedIcon: Icons.PROFILE_TAB_SELECTED
   },
   LOGIN_SCREEN: {
     screen: 'app.LoginScreen',

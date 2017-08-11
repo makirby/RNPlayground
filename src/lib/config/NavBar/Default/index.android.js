@@ -8,7 +8,8 @@ const style = {
   statusBarColor: '#007aff',
   navBarButtonColor: '#007aff',
   navBarBackgroundColor: '#ffffff',
-  screenBackgroundColor: '#ffffff'
+  screenBackgroundColor: '#ffffff',
+  navBarTranslucent: true
 }
 
 const buttons = {
