@@ -4,12 +4,11 @@
 
 // [more info] - https://wix.github.io/react-native-navigation/#/styling-the-navigator
 const style = {
-  navBarTextColor: '#007aff',
-  statusBarColor: '#007aff',
+  navBarTextColor: '#424242',
+  statusBarColor: '#BDBDBD',
   navBarButtonColor: '#007aff',
   navBarBackgroundColor: '#ffffff',
   screenBackgroundColor: '#ffffff',
-  navBarTranslucent: true,
 }
 
 const buttons = {

@@ -3,10 +3,13 @@
  * @flow
  */
 
+import NavBar from '../../lib/config/NavBar'
 import Profile from '../components/Profile'
 import React from 'react'
 
 class ProfileScreen extends React.PureComponent {
+  static navigatorStyle = NavBar.Default.style
+
   render() {
     return (
       <Profile />

@@ -7,7 +7,7 @@
 
 import { Navigation } from 'react-native-navigation'
 import { Platform } from 'react-native'
-import { registerScreens } from './registerScreens'
+import { openLoginModalIn, registerScreens } from './registerScreens'
 import Constants from './lib/constants'
 import Provider from './lib/provider'
 import Stores from './lib/stores'

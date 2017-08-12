@@ -4,9 +4,8 @@
  */
 
 import { Button, StyleSheet, View } from 'react-native'
-import { Heading1, Paragraph } from '../../common/rl-style/index'
+import { Heading1, Paragraph, RLColours } from '../../common/rl-style'
 
-import { RLColours } from '../../common/rl-style'
 import React from 'react'
 
 type FeedItemPropType = {

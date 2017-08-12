@@ -4,9 +4,11 @@
  */
 
 import { PageWrapper } from '../../common/rl-content-wrappers'
+import NavBar from '../../lib/config/NavBar'
 import React from 'react'
 
 class News extends React.PureComponent {
+  static navigatorStyle = NavBar.Default.style
   render() {
     return (
       <PageWrapper

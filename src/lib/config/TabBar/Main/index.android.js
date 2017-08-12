@@ -3,8 +3,8 @@
  */
 
 export default {
-  tabBarButtonColor: '#007aff',
-  tabBarSelectedButtonColor: '#007aff',
+  tabBarButtonColor: '#BDBDBD',
+  tabBarSelectedButtonColor: '#424242',
   tabBarBackgroundColor: '#ffffff',
   tabBarTranslucent: false,
   forceTitlesDisplay: true,
