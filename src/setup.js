@@ -10,39 +10,35 @@ import { Platform } from 'react-native'
 import { registerScreens } from './registerScreens'
 import Constants from './lib/constants'
 import Provider from './lib/provider'
-import React from 'react'
 import Stores from './lib/stores'
 import TabBar from './lib/config/TabBar'
 
-function setup() {
-  // Bootstrap scenes with mobx store
-  registerScreens(Stores, Provider)
 
-  // Start app with react navigation
-  Navigation.startTabBasedApp({
-    tabs: [
-      {
-        ...Constants.Screens.FEED_TAB,
-      },
-      {
-        ...Constants.Screens.LIVE_TAB,
-      },
-      {
-        ...Constants.Screens.LEADERBOARD_TAB,
-      },
-      {
-        ...Constants.Screens.PROFILE_TAB,
-      },
-    ],
-    ...Platform.select({
-      ios: {
-        tabsStyle: TabBar.Main,
-      },
-      android: {
-        appStyle: TabBar.Main,
-      },
-    }),
-  })
-}
+// Bootstrap scenes with mobx store
+registerScreens(Stores, Provider)
 
-export default setup
+// Start app with react navigation
+Navigation.startTabBasedApp({
+  tabs: [
+    {
+      ...Constants.Screens.FEED_TAB,
+    },
+    {
+      ...Constants.Screens.LIVE_TAB,
+    },
+    {
+      ...Constants.Screens.LEADERBOARD_TAB,
+    },
+    {
+      ...Constants.Screens.PROFILE_TAB,
+    },
+  ],
+  ...Platform.select({
+    ios: {
+      tabsStyle: TabBar.Main,
+    },
+    android: {
+      appStyle: TabBar.Main,
+    },
+  }),
+})

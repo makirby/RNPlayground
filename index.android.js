@@ -3,6 +3,4 @@
  * @flow
  */
 
-import setup from './src/setup'
-
-setup()
+import Setup from './src/setup'
