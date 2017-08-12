@@ -9,7 +9,7 @@ const style = {
   navBarButtonColor: '#007aff',
   navBarBackgroundColor: '#ffffff',
   screenBackgroundColor: '#ffffff',
-  navBarTranslucent: true
+  navBarTranslucent: true,
 }
 
 const buttons = {
@@ -17,5 +17,5 @@ const buttons = {
 }
 
 export default {
-  style, buttons
+  style, buttons,
 }

@@ -2,15 +2,15 @@
  * @flow
  */
 
-import {computed, observable} from "mobx"
+import { computed, observable } from 'mobx'
 
-import {persist} from "mobx-persist"
+import { persist } from 'mobx-persist'
 
 class Account {
   @persist @observable
-  username = "username";
+  username = 'username';
   @persist @observable
-  password = "password";
+  password = 'password';
 }
 
 export default Account

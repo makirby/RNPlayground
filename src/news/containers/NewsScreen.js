@@ -3,8 +3,8 @@
  * @flow
  */
 
-import React from 'react'
 import News from '../components/News'
+import React from 'react'
 
 class NewsScreen extends React.PureComponent {
   render() {

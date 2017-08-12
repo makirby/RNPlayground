@@ -10,7 +10,7 @@ const environment = {
   sandbox: true,
   appId: '',
   apiKey: '',
-  fontFamily: undefined
+  fontFamily: undefined,
 }
 
 export default environment

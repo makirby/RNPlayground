@@ -9,5 +9,5 @@ import WelcomeScreen from './WelcomeScreen'
 export {
   LoginScreen,
   SplashScreen,
-  WelcomeScreen
+  WelcomeScreen,
 }

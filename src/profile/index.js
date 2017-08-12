@@ -5,5 +5,5 @@
 import Store from './ProfileStore'
 
 export {
-  Store
+  Store,
 }

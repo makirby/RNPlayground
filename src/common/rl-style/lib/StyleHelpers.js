@@ -4,10 +4,8 @@
  * @flow
  */
 
-import {Dimensions} from 'react-native'
+import { Dimensions } from 'react-native'
 
 const scale = Dimensions.get('window').width / 375
 
-export const normalise = (size: number) => {
-  return Math.round(scale * size)
-}
+export const normalise = (size: number) => Math.round(scale * size)

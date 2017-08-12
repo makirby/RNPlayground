@@ -2,7 +2,7 @@
  * @flow
  */
 
-import {Platform, RefreshControl, StyleSheet} from 'react-native'
+import { Platform, RefreshControl, StyleSheet } from 'react-native'
 
 import React from 'react'
 
@@ -20,14 +20,14 @@ class AmigoRefreshControl extends React.Component {
     super(props)
 
     this.state = {
-      refreshing: false
+      refreshing: false,
     }
   }
 
   _onRefresh = () => {
-    this.setState({refreshing: true})
+    this.setState({ refreshing: true })
     this.props.refreshAction().then(() => {
-      this.setState({refreshing: false})
+      this.setState({ refreshing: false })
     })
   }
 
@@ -46,8 +46,8 @@ class AmigoRefreshControl extends React.Component {
 
 const styles = StyleSheet.create({
   controlBackground: {
-    backgroundColor: 'transparent'
-  }
+    backgroundColor: 'transparent',
+  },
 })
 
 export default AmigoRefreshControl

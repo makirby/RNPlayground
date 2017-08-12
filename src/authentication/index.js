@@ -5,5 +5,5 @@
 import Store from './AuthenticationStore'
 
 export {
-  Store
+  Store,
 }

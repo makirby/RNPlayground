@@ -2,9 +2,9 @@
  * @flow
  */
 
-import {Provider} from 'mobx-react/native'
+import { Provider } from 'mobx-react/native'
 
-const SPECIAL_REACT_KEYS = {children: true, key: true, ref: true}
+const SPECIAL_REACT_KEYS = { children: true, key: true, ref: true }
 
 export default class MobxRnnProvider extends Provider {
   props: {
@@ -36,7 +36,7 @@ export default class MobxRnnProvider extends Provider {
     }
 
     return {
-      mobxStores: stores
+      mobxStores: stores,
     }
   }
 }

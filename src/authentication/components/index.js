@@ -9,5 +9,5 @@ import Welcome from './Welcome'
 export {
   Login,
   Splash,
-  Welcome
+  Welcome,
 }

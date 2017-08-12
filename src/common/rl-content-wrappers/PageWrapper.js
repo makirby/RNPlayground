@@ -3,10 +3,10 @@
  * @flow
  */
 
-import {Heading1, Paragraph} from "../rl-style"
-import {StyleSheet, View} from "react-native"
+import { Heading1, Paragraph } from '../rl-style'
+import { StyleSheet, View } from 'react-native'
 
-import React from "react"
+import React from 'react'
 
 type PropsType = {
   style?: any,
@@ -32,19 +32,19 @@ const RLPageWrapper = (props: PropsType): React.Element<*> => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
+    backgroundColor: 'white',
     padding: 30,
     paddingTop: 75,
-    alignItems: "center"
+    alignItems: 'center',
   },
   title: {
-    textAlign: "center",
-    marginBottom: 10
+    textAlign: 'center',
+    marginBottom: 10,
   },
   text: {
-    textAlign: "center",
-    marginBottom: 35
-  }
+    textAlign: 'center',
+    marginBottom: 35,
+  },
 })
 
 export default RLPageWrapper

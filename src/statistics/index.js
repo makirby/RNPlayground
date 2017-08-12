@@ -5,5 +5,5 @@
 import Store from './StatisticsStore'
 
 export {
-  Store
+  Store,
 }

@@ -4,21 +4,21 @@
  * @flow
  */
 
-import { MessageHandler } from '~/common/status-bar'
-import environment from '~/env'
+// import { MessageHandler } from '../../common/status-bar'
+import environment from '../../env'
 
-export type FetchOptions = {
-  method: 'GET' | 'PUT' | 'POST' | 'PATCH';
-  url: string;
-  body?: Object;
-  callback?: () => void;
-}
+export type FetchOptionsType = {
+  method: 'GET' | 'PUT' | 'POST' | 'PATCH',
+  url: string,
+  body?: Object,
+  callback?: () => void
+};
 
-export type ReqOpts = {
-  method: 'GET' | 'PUT' | 'POST' | 'PATCH';
-  headers: Object;
-  body: ?string;
-}
+export type ReqOptsType = {
+  method: 'GET' | 'PUT' | 'POST' | 'PATCH',
+  headers: Object,
+  body: ?string
+};
 
 class RLService {
   _baseUrl: string
@@ -40,13 +40,13 @@ class RLService {
     this._sessionToken = undefined
   }
 
-  async fetch(req: FetchOptions) {
+  async fetch(req: FetchOptionsType) {
     const opts = {
       method: 'GET',
       ...req,
     }
 
-    const reqOpts: ReqOpts = {
+    const reqOpts: ReqOptsType = {
       method: opts.method,
       headers: {},
       body: null,
@@ -67,8 +67,8 @@ class RLService {
 
     const request = this._baseUrl + opts.url
 
-    return fetch(request, reqOpts).then(response =>
-      response.json().then(json => ({
+    return fetch(request, reqOpts).then((response) =>
+      response.json().then((json) => ({
         ok: response.ok,
         status: response.status,
         json,
@@ -81,7 +81,7 @@ class RLService {
           return json
         }
         if (status === 401 || status === 403) {
-          MessageHandler.createPresetMessage('Unauthorised')
+          // MessageHandler.createPresetMessage('Unauthorised')
         }
         // Status not OK
         return Promise.reject(new Error(`code: ${status.toString()} ${json}`))
@@ -93,6 +93,6 @@ class RLService {
   }
 }
 
-const amigoService = new RLService()
+const service = new RLService()
 
-export default amigoService
+export default service

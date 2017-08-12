@@ -2,9 +2,9 @@
  * @flow
  */
 
-import {action, observable} from 'mobx'
+import { action, observable } from 'mobx'
 
-import type {LeaderboardSelectionType} from './types'
+import type { LeaderboardSelectionType } from './types'
 
 class StatisticsStore {
   @observable leaderboards = {};

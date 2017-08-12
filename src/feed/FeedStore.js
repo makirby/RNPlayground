@@ -4,9 +4,9 @@
  * @flow
  */
 
-import {action, observable} from 'mobx'
+import { action, observable } from 'mobx'
 
-import type {FeedFilterType} from './types'
+import type { FeedFilterType } from './types'
 
 class FeedStore {
   @observable feedItems = [];

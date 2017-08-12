@@ -4,7 +4,7 @@
  * @flow
  */
 
-import {action, observable} from 'mobx'
+import { action, observable } from 'mobx'
 
 class ProfileStore {
   @observable name: string = '';

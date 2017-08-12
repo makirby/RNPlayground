@@ -7,12 +7,12 @@ const style = {}
 const buttons = {
   leftButtons: [
     {
-      id: "cancel"
-    }
-  ]
+      id: 'cancel',
+    },
+  ],
 }
 
 export default {
   style,
-  buttons
+  buttons,
 }

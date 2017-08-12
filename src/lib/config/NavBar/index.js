@@ -2,10 +2,10 @@
  * @flow
  */
 
-import Default from "./Default"
-import Modal from "./Modal"
+import Default from './Default'
+import Modal from './Modal'
 
 export default {
   Default,
-  Modal
+  Modal,
 }

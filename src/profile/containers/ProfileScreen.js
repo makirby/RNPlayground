@@ -3,8 +3,8 @@
  * @flow
  */
 
-import React from 'react'
 import Profile from '../components/Profile'
+import React from 'react'
 
 class ProfileScreen extends React.PureComponent {
   render() {

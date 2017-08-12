@@ -5,5 +5,5 @@
 import Store from './FeedStore'
 
 export {
-  Store
+  Store,
 }

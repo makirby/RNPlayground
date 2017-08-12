@@ -8,7 +8,8 @@
     "xcode": "open ios/playground.xcodeproj",
     "android": "cd android && ./gradlew installDebug",
     "flow": "flow",
-    "lint": "eslint . --ignore-path .gitignore"
+    "lint": "eslint ./src --ignore-path .gitignore  --quiet",
+    "lint:fix": "eslint ./src --ignore-path .gitignore  --fix"
   },
   "dependencies": {
     "immutability-helper": "^2.2.3",
@@ -24,10 +25,14 @@
     "babel-jest": "20.0.3",
     "babel-preset-react-native": "2.0.0",
     "babel-preset-react-native-stage-0": "^1.0.1",
-    "eslint": "^4.2.0",
-    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint": "^4.4.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-react-native": "^2.3.1",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.1.1",
     "flow-bin": "^0.46.0",
     "jest": "20.0.4",
     "react-test-renderer": "16.0.0-alpha.12"

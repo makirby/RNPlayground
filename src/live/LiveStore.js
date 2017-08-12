@@ -4,7 +4,7 @@
  * @flow
  */
 
-import {action, observable} from 'mobx'
+import { action, observable } from 'mobx'
 
 class LiveStore {
   @observable liveItems = [];

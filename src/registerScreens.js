@@ -3,75 +3,75 @@
  * @flow
  */
 
-import Constants from "./lib/constants"
-import FeedScreen from "./feed/containers/FeedScreen"
-import LiveScreen from "./live/containers/LiveScreen"
-import LoginScreen from "./authentication/containers/LoginScreen"
-import {Navigation} from "react-native-navigation"
-import NewsScreen from "./news/containers/NewsScreen"
-import ProfileScreen from "./profile/containers/ProfileScreen"
-import RankingScreen from "./statistics/containers/RankingScreen"
-import SplashScreen from "./authentication/containers/SplashScreen"
-import WelcomeScreen from "./authentication/containers/WelcomeScreen"
+import { Navigation } from 'react-native-navigation'
+import Constants from './lib/constants'
+import FeedScreen from './feed/containers/FeedScreen'
+import LiveScreen from './live/containers/LiveScreen'
+import LoginScreen from './authentication/containers/LoginScreen'
+import NewsScreen from './news/containers/NewsScreen'
+import ProfileScreen from './profile/containers/ProfileScreen'
+import RankingScreen from './statistics/containers/RankingScreen'
+import SplashScreen from './authentication/containers/SplashScreen'
+import WelcomeScreen from './authentication/containers/WelcomeScreen'
 
 export function registerScreens(store: {}, Provider: {}) {
   Navigation.registerComponent(
     Constants.Screens.FEED_TAB.screen,
     () => FeedScreen,
     store,
-    Provider
+    Provider,
   )
   Navigation.registerComponent(
     Constants.Screens.LIVE_TAB.screen,
     () => LiveScreen,
     store,
-    Provider
+    Provider,
   )
   Navigation.registerComponent(
     Constants.Screens.LEADERBOARD_TAB.screen,
     () => RankingScreen,
     store,
-    Provider
+    Provider,
   )
   Navigation.registerComponent(
     Constants.Screens.PROFILE_TAB.screen,
     () => ProfileScreen,
     store,
-    Provider
+    Provider,
   )
   Navigation.registerComponent(
     Constants.Screens.NEWS_SCREEN.screen,
     () => NewsScreen,
     store,
-    Provider
+    Provider,
   )
   Navigation.registerComponent(
     Constants.Screens.LOGIN_SCREEN.screen,
     () => LoginScreen,
     store,
-    Provider
+    Provider,
   )
   Navigation.registerComponent(
     Constants.Screens.SPLASH_SCREEN.screen,
     () => SplashScreen,
     store,
-    Provider
+    Provider,
   )
   Navigation.registerComponent(
     Constants.Screens.WELCOME_SCREEN.screen,
     () => WelcomeScreen,
     store,
-    Provider
+    Provider,
   )
 }
 
 export const openLoginModalIn = (
   navigator: { showModal: Function },
-  withCancelButton: boolean = true
+  withCancelButton: boolean = true,
 ) => {
   navigator.showModal({
     ...Constants.Screens.LOGIN_SCREEN,
-    passProps: {withCancelButton},
-    overrideBackPress: true // [Android] if you want to prevent closing a modal by pressing back button in Android
+    passProps: { withCancelButton },
+    overrideBackPress: true, // [Android] if you want to prevent closing a modal by pressing back button in Android
   })
 }

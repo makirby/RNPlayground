@@ -2,10 +2,10 @@
  * @flow
  */
 
-import {PageHeading, Paragraph} from "../rl-style"
-import {ScrollView, StyleSheet, View} from "react-native"
+import { PageHeading, Paragraph } from '../rl-style'
+import { ScrollView, StyleSheet, View } from 'react-native'
 
-import React from "react"
+import React from 'react'
 
 type PropsType = {
   style?: any,
@@ -21,8 +21,8 @@ const RLScrollView = (props: PropsType): React.Element<*> => {
   const subtitle
     = Boolean(props.subtitle)
     && <Paragraph style={styles.subtitle}>
-        {props.subtitle}
-      </Paragraph>
+      {props.subtitle}
+    </Paragraph>
   return (
     <ScrollView style={[styles.container, props.style]}>
       {title}
@@ -34,19 +34,19 @@ const RLScrollView = (props: PropsType): React.Element<*> => {
 
 const styles = StyleSheet.create({
   container: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   title: {
-    textAlign: "left",
+    textAlign: 'left',
     marginTop: 10,
     marginLeft: 5,
-    marginBottom: 10
+    marginBottom: 10,
   },
   subtitle: {
-    textAlign: "left",
+    textAlign: 'left',
     marginLeft: 5,
-    marginBottom: 10
-  }
+    marginBottom: 10,
+  },
 })
 
 export default RLScrollView

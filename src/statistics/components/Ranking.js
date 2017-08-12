@@ -3,7 +3,7 @@
  * @flow
  */
 
-import {RLScrollView} from '../../common/rl-content-wrappers'
+import { RLScrollView } from '../../common/rl-content-wrappers'
 import React from 'react'
 
 class Ranking extends React.PureComponent {

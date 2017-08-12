@@ -3,8 +3,8 @@
  * @flow
  */
 
-import React from 'react'
 import Ranking from '../components/Ranking'
+import React from 'react'
 
 class RankingScreen extends React.PureComponent {
   render() {
