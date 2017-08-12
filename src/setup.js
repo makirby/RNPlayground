@@ -38,7 +38,10 @@ Navigation.startTabBasedApp({
       tabsStyle: TabBar.Main,
     },
     android: {
-      appStyle: TabBar.Main,
+      appStyle: {
+        statusBarTextColorScheme: 'dark',
+        ...TabBar.Main,
+      },
     },
   }),
 })

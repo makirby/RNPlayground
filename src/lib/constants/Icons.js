@@ -1,6 +1,7 @@
 /**
  * @flow
  */
+/* eslint global-require: 0 */
 
 export default {
   FEED_TAB: require('../../content/img/feed_25.png'),
