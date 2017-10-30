@@ -126,6 +126,11 @@ android {
 }
 
 dependencies {
+    compile project(':mobile-center-crashes')
+    compile project(':mobile-center-analytics')
+    compile project(':mobile-center')
+    compile project(':react-native-interactable')
+    compile project(':react-native-blur')
     compile project(':react-native-navigation')
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:25.3.1"

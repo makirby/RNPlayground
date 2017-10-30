@@ -6,6 +6,9 @@ target 'rlmobile' do
   # use_frameworks!
 
   # Pods for rlmobile
+  pod 'MobileCenter/Crashes', '~> 0.13.0'
+  pod 'MobileCenter/Analytics', '~> 0.13.0'
+  pod 'RNMobileCenterShared', '~> 0.10.0'
 
 
 end

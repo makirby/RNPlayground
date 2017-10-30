@@ -5,12 +5,12 @@
 
 import { Navigation } from 'react-native-navigation'
 import { Platform } from 'react-native'
+import { inject } from 'mobx-react/native'
 import { registerScreens } from './registerScreens'
 import Constants from './lib/constants'
 import Provider from './lib/provider'
 import Stores from './lib/stores'
 import TabBar from './lib/config/TabBar'
-import { inject } from 'mobx-react/native'
 
 @inject('Account')
 class App {
