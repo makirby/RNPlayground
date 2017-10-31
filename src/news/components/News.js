@@ -7,7 +7,7 @@ import { PageWrapper } from '../../common/rl-content-wrappers'
 import NavBar from '../../lib/config/NavBar'
 import React from 'react'
 
-class News extends React.PureComponent {
+class News extends React.Component {
   static navigatorStyle = NavBar.Default.style
   render() {
     return (

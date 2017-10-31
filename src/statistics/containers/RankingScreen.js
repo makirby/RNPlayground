@@ -8,7 +8,7 @@ import Ranking from '../components/Ranking'
 import React from 'react'
 
 
-class RankingScreen extends React.PureComponent {
+class RankingScreen extends React.Component {
   static navigatorStyle = NavBar.Default.style
 
   render() {

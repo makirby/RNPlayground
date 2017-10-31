@@ -6,7 +6,7 @@
 import { RLScrollView } from '../../common/rl-content-wrappers'
 import React from 'react'
 
-class Live extends React.PureComponent {
+class Live extends React.Component {
   render() {
     return (
       <RLScrollView

@@ -6,7 +6,7 @@
 import News from '../components/News'
 import React from 'react'
 
-class NewsScreen extends React.PureComponent {
+class NewsScreen extends React.Component {
   render() {
     return (
       <News />

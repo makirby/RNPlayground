@@ -6,7 +6,7 @@
 import { RLScrollView } from '../../common/rl-content-wrappers'
 import React from 'react'
 
-class Feed extends React.PureComponent {
+class Feed extends React.Component {
   render() {
     return (
       <RLScrollView

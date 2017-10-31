@@ -6,7 +6,7 @@
 import { PageWrapper } from '../../common/rl-content-wrappers'
 import React from 'react'
 
-class Login extends React.PureComponent {
+class Login extends React.Component {
   render() {
     return (
       <PageWrapper

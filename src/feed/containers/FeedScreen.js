@@ -7,7 +7,7 @@ import Feed from '../components/Feed'
 import NavBar from '../../lib/config/NavBar'
 import React from 'react'
 
-class FeedScreen extends React.PureComponent {
+class FeedScreen extends React.Component {
   static navigatorStyle = NavBar.Default.style
   render() {
     return <Feed />

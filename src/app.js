@@ -13,10 +13,8 @@ import Stores from './lib/stores'
 import TabBar from './lib/config/TabBar'
 
 class App {
-  props: any;
   store: any;
-  constructor(props: any = {}) {
-    this.props = props
+  constructor() {
     this.store = Stores
     registerScreens(this.store, Provider)
 

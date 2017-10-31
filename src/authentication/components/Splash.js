@@ -6,7 +6,7 @@
 import { PageWrapper } from '../../common/rl-content-wrappers'
 import React from 'react'
 
-class Splash extends React.PureComponent {
+class Splash extends React.Component {
   render() {
     return (
       <PageWrapper

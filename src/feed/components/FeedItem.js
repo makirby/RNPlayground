@@ -15,7 +15,7 @@ type FeedItemPropType = {
   actions?: Array<Function>
 };
 
-class FeedItem extends React.PureComponent {
+class FeedItem extends React.Component {
   props: FeedItemPropType;
   renderTitle = () => (
     <View style={styles.itemHeader}>
