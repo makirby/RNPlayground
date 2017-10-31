@@ -3,4 +3,6 @@
  * @flow
  */
 
-import Setup from './src/setup'
+import App from './src/app'
+
+const Application = new App()

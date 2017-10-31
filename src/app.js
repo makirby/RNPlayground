@@ -12,12 +12,15 @@ import Provider from './lib/provider'
 import Stores from './lib/stores'
 import TabBar from './lib/config/TabBar'
 
-@inject('Account')
 class App {
   props: any;
-  constructor(props: any) {
+  store: any;
+  constructor(props: any = {}) {
     this.props = props
-    registerScreens(Stores, Provider)
+    this.store = Stores
+    registerScreens(this.store, Provider)
+
+    this.startApp('unauthorised')
   }
 
   startApp(root: string) {
