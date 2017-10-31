@@ -5,7 +5,7 @@
  * @flow
  */
 
-import { Navigation } from 'react-native-navigation'
+import Navigation from 'react-native-navigation'
 import { Platform } from 'react-native'
 import { openLoginModalIn, registerScreens } from './registerScreens'
 import Constants from './lib/constants'
@@ -14,31 +14,41 @@ import Stores from './lib/stores'
 import TabBar from './lib/config/TabBar'
 
 
-// Bootstrap scenes with mobx store
-registerScreens(Stores, Provider)
+Navigation.events().onAppLaunched(() => {
+  registerScreens()
+  // Bootstrap scenes with mobx store
+  // Navigation.setRoot({
+  //   container: {
+  //     name: Constants.Screens.WELCOME_SCREEN.name
+  //   }
+  // });
 
-// Start app with react navigation
-Navigation.startTabBasedApp({
-  tabs: [
-    {
-      ...Constants.Screens.FEED_TAB,
-    },
-    {
-      ...Constants.Screens.LIVE_TAB,
-    },
-    {
-      ...Constants.Screens.LEADERBOARD_TAB,
-    },
-    {
-      ...Constants.Screens.PROFILE_TAB,
-    },
-  ],
-  ...Platform.select({
-    ios: {
-      tabsStyle: TabBar.Main,
-    },
-    android: {
-      appStyle: TabBar.Main,
-    },
-  }),
+  Navigation.setRoot({
+    bottomTabs: [
+      {
+        container: {
+          name: Constants.Screens.FEED_TAB.name,
+          // navigationOptions: {
+          //   icon: Constants.Screens.FEED_TAB.icon,
+          // },
+        },
+      },
+      {
+        container: {
+          name: Constants.Screens.LIVE_TAB.name,
+        },
+      },
+      {
+        container: {
+          name: Constants.Screens.LEADERBOARD_TAB.name,
+        },
+      },
+      {
+        container: {
+          name: Constants.Screens.PROFILE_TAB.name,
+        },
+      },
+    ],
+  })
 })
+
