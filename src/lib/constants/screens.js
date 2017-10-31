@@ -6,58 +6,58 @@ import Icons from './Icons'
 
 export default {
   DRAWER: {
-    screen: 'app.DrawerScreen',
+    name: 'app.DrawerScreen',
   },
   FEED_TAB: {
-    screen: 'app.FeedTabScreen',
+    name: 'app.FeedTabScreen',
     title: 'Feed',
     label: 'Feed',
     icon: Icons.FEED_TAB,
     selectedIcon: Icons.FEED_TAB_SELECTED,
   },
   LIVE_TAB: {
-    screen: 'app.LiveTabScreen',
+    name: 'app.LiveTabScreen',
     title: 'Live',
     label: 'Live',
     icon: Icons.LIVE_TAB,
     selectedIcon: Icons.LIVE_TAB_SELECTED,
   },
   LEADERBOARD_TAB: {
-    screen: 'app.LeaderboardTabScreen',
+    name: 'app.LeaderboardTabScreen',
     title: 'Leaderboard',
     label: 'Leaderboard',
     icon: Icons.LEADERBOARD_TAB,
     selectedIcon: Icons.LEADERBOARD_TAB_SELECTED,
   },
   PROFILE_TAB: {
-    screen: 'app.ProfileTabScreen',
+    name: 'app.ProfileTabScreen',
     title: 'Profile',
     label: 'Profile',
     icon: Icons.PROFILE_TAB,
     selectedIcon: Icons.PROFILE_TAB_SELECTED,
   },
   LOGIN_SCREEN: {
-    screen: 'app.LoginScreen',
+    name: 'app.LoginScreen',
     title: 'Login',
   },
   NEWS_SCREEN: {
-    screen: 'app.NewsScreen',
+    name: 'app.NewsScreen',
     title: 'News',
   },
   WELCOME_SCREEN: {
-    screen: 'app.WelcomeScreen',
+    name: 'app.WelcomeScreen',
     title: 'Welcome',
   },
   SPLASH_SCREEN: {
-    screen: 'app.SplashScreen',
+    name: 'app.SplashScreen',
     title: 'Splash',
   },
   STATS_SCREEN: {
-    screen: 'app.StatsScreen',
+    name: 'app.StatsScreen',
     title: 'Stats',
   },
   RANKING_SCREEN: {
-    screen: 'app.RankingScreen',
+    name: 'app.RankingScreen',
     title: 'Ranking',
   },
 }
