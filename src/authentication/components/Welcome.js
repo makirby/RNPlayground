@@ -3,10 +3,10 @@
  * @flow
  */
 
-import { Button } from '../../common/rl-style'
-import Constants from '../../lib/constants'
+import { Button, Text } from '../../common/rl-style'
 import { PageWrapper } from '../../common/rl-content-wrappers'
 import { View } from 'react-native-ui-lib'
+import Constants from '../../lib/constants'
 import React from 'react'
 
 type WelcomeProps = {
@@ -14,7 +14,6 @@ type WelcomeProps = {
 }
 
 class Welcome extends React.Component<WelcomeProps> {
-
   onPressLogin = () => {
     this.props.navigator.push(
       {
@@ -39,7 +38,9 @@ class Welcome extends React.Component<WelcomeProps> {
       >
         <View flex bottom>
           <Button fullWidth marginB-6 label="Login" onPress={this.onPressLogin} />
-          <Button background-orange30 marginB-12 fullWidth label="Register" onPress={this.onPressRegister} />
+          <Button marginB-18 fullWidth label="Register" onPress={this.onPressRegister} />
+          <Text center marginB-18>or</Text>
+          <Button link marginB-18 label="Continue without login" onPress={this.onPressLogin} />
         </View>
       </PageWrapper>
     )
