@@ -3,14 +3,28 @@
  */
 /* eslint class-methods-use-this: 0 */
 
+import { Colors } from 'react-native-ui-lib'
 import { Navigation } from 'react-native-navigation'
 import { Platform } from 'react-native'
-import { inject } from 'mobx-react/native'
 import { registerScreens } from './registerScreens'
 import Constants from './lib/constants'
 import Provider from './lib/provider'
 import Stores from './lib/stores'
 import TabBar from './lib/config/TabBar'
+
+Colors.loadColors({
+  complete: '#26a65b',
+  completeIcon: '#4abe7a',
+  incomplete: '#efefef',
+  incompleteLight: '#efefef',
+  active: '#fec730',
+  activeLight: '#ffd45f',
+  locked: '#efefef',
+  lockedLight: '#F4F6F7',
+  unknown: '#efefef',
+  disabledBackground: '#CCCCCC',
+  lightBackground: '#EEEEEE',
+})
 
 class App {
   store: any;
@@ -26,7 +40,7 @@ class App {
       case 'unauthorised': {
         Navigation.startSingleScreenApp({
           screen: {
-            ...Constants.Screens.LOGIN_SCREEN,
+            ...Constants.Screens.WELCOME_SCREEN,
           },
           ...Platform.select({
             ios: {

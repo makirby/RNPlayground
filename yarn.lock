@@ -4073,7 +4073,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.6, prop-types@^15.5.8:
+prop-types@^15.5.10, prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
@@ -4174,14 +4174,14 @@ react-native-navigation@^1.1.255:
   dependencies:
     lodash "4.x.x"
 
-react-native-ui-lib@^2.0.117:
-  version "2.0.117"
-  resolved "https://registry.yarnpkg.com/react-native-ui-lib/-/react-native-ui-lib-2.0.117.tgz#7808e494a248f7383b57328695e2e2393c857a11"
+"react-native-ui-lib@github:makirby/react-native-ui-lib":
+  version "2.0.118"
+  resolved "https://codeload.github.com/makirby/react-native-ui-lib/tar.gz/e0dd830bac1ae1d5f8405f2318924b034af776ac"
   dependencies:
     babel-plugin-transform-inline-environment-variables "^0.0.2"
     hoist-non-react-statics "^2.3.0"
     lodash "^4.0.0"
-    prop-types "^15.5.10"
+    prop-types "^15.6.0"
     react-native-animatable "^1.1.0"
     react-native-blur "^3.1.1"
     react-native-interactable latest

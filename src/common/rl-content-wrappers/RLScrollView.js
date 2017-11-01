@@ -3,7 +3,7 @@
  */
 
 import { PageHeading, Paragraph } from '../rl-style'
-import { ScrollView, StyleSheet, View } from 'react-native'
+import { ScrollView, StyleSheet } from 'react-native'
 
 import React from 'react'
 
@@ -14,7 +14,7 @@ type PropsType = {
   children?: any
 };
 
-const RLScrollView = (props: PropsType): React.Element<*> => {
+const RLScrollView = (props: PropsType) => {
   const title
     = Boolean(props.title)
     && <PageHeading style={styles.title}>{props.title}</PageHeading>

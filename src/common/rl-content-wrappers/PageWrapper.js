@@ -4,8 +4,8 @@
  */
 
 import { Heading1, Paragraph } from '../rl-style'
-import { StyleSheet, View } from 'react-native'
-
+import { StyleSheet } from 'react-native'
+import { View } from 'react-native-ui-lib'
 import React from 'react'
 
 type PropsType = {
@@ -15,11 +15,10 @@ type PropsType = {
   children?: any
 };
 
-const RLPageWrapper = (props: PropsType): React.Element<*> => {
-  const title
-    = props.title && <Heading1 style={styles.title}>{props.title}</Heading1>
+const RLPageWrapper = (props: PropsType) => {
+  const title = props.title && <Heading1 style={styles.title}>{props.title}</Heading1>
   return (
-    <View style={[styles.container, props.style]}>
+    <View flex flex-1 padding-30 paddingT-75>
       {title}
       <Paragraph style={styles.text}>
         {props.text}
@@ -30,13 +29,6 @@ const RLPageWrapper = (props: PropsType): React.Element<*> => {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white',
-    padding: 30,
-    paddingTop: 75,
-    alignItems: 'center',
-  },
   title: {
     textAlign: 'center',
     marginBottom: 10,
