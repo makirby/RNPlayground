@@ -6,7 +6,9 @@
 import { RLScrollView } from '../../common/rl-content-wrappers'
 import React from 'react'
 
-class Ranking extends React.Component {
+type RankingProps = {}
+
+class Ranking extends React.Component<RankingProps> {
   render() {
     return (
       <RLScrollView

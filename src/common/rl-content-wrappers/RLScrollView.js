@@ -7,22 +7,16 @@ import { ScrollView, StyleSheet } from 'react-native'
 
 import React from 'react'
 
-type PropsType = {
+type RLScrollViewProps = {
   style?: any,
   title?: string,
   subtitle?: string,
   children?: any
 };
 
-const RLScrollView = (props: PropsType) => {
-  const title
-    = Boolean(props.title)
-    && <PageHeading style={styles.title}>{props.title}</PageHeading>
-  const subtitle
-    = Boolean(props.subtitle)
-    && <Paragraph style={styles.subtitle}>
-      {props.subtitle}
-    </Paragraph>
+const RLScrollView = (props: RLScrollViewProps): React$Node => {
+  const title = !!props.title && <PageHeading>{props.title}</PageHeading>
+  const subtitle = !!props.subtitle && <Paragraph>{props.subtitle}</Paragraph>
   return (
     <ScrollView style={[styles.container, props.style]}>
       {title}
@@ -35,17 +29,6 @@ const RLScrollView = (props: PropsType) => {
 const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
-  },
-  title: {
-    textAlign: 'left',
-    marginTop: 10,
-    marginLeft: 5,
-    marginBottom: 10,
-  },
-  subtitle: {
-    textAlign: 'left',
-    marginLeft: 5,
-    marginBottom: 10,
   },
 })
 

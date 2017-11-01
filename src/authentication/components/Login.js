@@ -6,7 +6,11 @@
 import { PageWrapper } from '../../common/rl-content-wrappers'
 import React from 'react'
 
-class Login extends React.Component {
+type LoginProps = {
+
+}
+
+class Login extends React.Component<LoginProps> {
   render() {
     return (
       <PageWrapper

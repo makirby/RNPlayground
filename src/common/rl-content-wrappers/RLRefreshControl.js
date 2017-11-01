@@ -2,21 +2,20 @@
  * @flow
  */
 
-import { Platform, RefreshControl, StyleSheet } from 'react-native'
+import { RefreshControl as RNRefreshControl, StyleSheet } from 'react-native'
 
 import React from 'react'
 
-type PropsType = {
-  refreshAction: (props: any) => Promise<*>
+type RefreshControlProps = {
+  refreshAction: (props: any) => Promise<*>,
 };
 
-class AmigoRefreshControl extends React.Component {
-  props: PropsType;
-  state: {
-    refreshing: boolean
-  }
+type RefreshControlState = {
+  refreshing: boolean,
+}
 
-  constructor(props: PropsType) {
+class RefreshControl extends React.Component<RefreshControlProps, RefreshControlState> {
+  constructor(props: RefreshControlProps) {
     super(props)
 
     this.state = {
@@ -33,7 +32,7 @@ class AmigoRefreshControl extends React.Component {
 
   render() {
     return (
-      <RefreshControl
+      <RNRefreshControl
         // title={'Pull to refresh'}
         style={styles.controlBackground}
         refreshing={this.state.refreshing}
@@ -50,4 +49,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default AmigoRefreshControl
+export default RefreshControl

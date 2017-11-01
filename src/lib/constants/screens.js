@@ -40,6 +40,10 @@ export default {
     screen: 'app.LoginScreen',
     title: 'Login',
   },
+  REGISTER_SCREEN: {
+    screen: 'app.RegisterScreen',
+    title: 'Register',
+  },
   NEWS_SCREEN: {
     screen: 'app.NewsScreen',
     title: 'News',

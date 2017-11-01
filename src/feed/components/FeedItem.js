@@ -3,20 +3,20 @@
  * @flow
  */
 
-import { Button, StyleSheet, View } from 'react-native'
-import { Heading1, Paragraph, RLColours } from '../../common/rl-style'
+import { Button, StyleSheet } from 'react-native'
+import { Heading1, Paragraph } from '../../common/rl-style'
+import { View } from 'react-native-ui-lib'
 
 import React from 'react'
 
-type FeedItemPropType = {
+type FeedItemProps = {
   title?: string,
   subtitle?: string,
   children?: any,
   actions?: Array<Function>
 };
 
-class FeedItem extends React.Component {
-  props: FeedItemPropType;
+class FeedItem extends React.Component<FeedItemProps> {
   renderTitle = () => (
     <View style={styles.itemHeader}>
       {this.props.title && <Heading1>{this.props.title}</Heading1>}
@@ -38,7 +38,7 @@ class FeedItem extends React.Component {
 
   render() {
     return (
-      <View style={styles.itemContainer}>
+      <View lightBackground style={styles.itemContainer} >
         {this.renderTitle()}
         {this.renderContent()}
         {this.props.actions && this.renderBottomRow()}
@@ -50,7 +50,6 @@ class FeedItem extends React.Component {
 const styles = StyleSheet.create({
   itemContainer: {
     minHeight: 50,
-    backgroundColor: RLColours.darkBackground,
   },
   itemHeader: {
     flexDirection: 'row',

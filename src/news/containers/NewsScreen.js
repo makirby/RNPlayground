@@ -6,7 +6,11 @@
 import News from '../components/News'
 import React from 'react'
 
-class NewsScreen extends React.Component {
+type NewsScreenProps = {
+
+}
+
+class NewsScreen extends React.Component<NewsScreenProps> {
   render() {
     return (
       <News />

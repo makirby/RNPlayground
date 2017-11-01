@@ -7,7 +7,11 @@ import NavBar from '../../lib/config/NavBar'
 import React from 'react'
 import Stats from '../components/Stats'
 
-class StatsScreen extends React.Component {
+type StatsScreenProps = {
+
+}
+
+class StatsScreen extends React.Component<StatsScreenProps> {
   static navigatorStyle = NavBar.Default.style
 
   render() {

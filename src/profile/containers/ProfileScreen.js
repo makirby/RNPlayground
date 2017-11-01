@@ -7,7 +7,11 @@ import NavBar from '../../lib/config/NavBar'
 import Profile from '../components/Profile'
 import React from 'react'
 
-class ProfileScreen extends React.Component {
+type ProfileScreenProps = {
+
+}
+
+class ProfileScreen extends React.Component<ProfileScreenProps> {
   static navigatorStyle = NavBar.Default.style
 
   render() {

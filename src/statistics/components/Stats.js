@@ -6,7 +6,9 @@
 import { PageWrapper } from '../../common/rl-content-wrappers'
 import React from 'react'
 
-class Stats extends React.Component {
+type StatsProps = {}
+
+class Stats extends React.Component<StatsProps> {
   render() {
     return (
       <PageWrapper

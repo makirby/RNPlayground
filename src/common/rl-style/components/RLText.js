@@ -1,81 +1,40 @@
 /**
  * # RLText.js
- * @providesModule RLText
+ * Create some default text styles to re-use
  * @flow
  */
 
-import { Text as NativeText, StyleSheet } from 'react-native'
-
-import { normalise } from '../lib/StyleHelpers'
-import Colours from '../lib/RLColours'
+import { Text as RNText } from 'react-native-ui-lib'
 import React from 'react'
-import env from '../../../env'
 
-export function Text({ style, ...props }: Object) {
-  return <NativeText style={[styles.font, style]} {...props} />
+export function Text({ ...props }: Object) {
+  return <RNText text70 {...props} />
 }
 
-export function PageHeading({ style, ...props }: Object) {
-  return <NativeText style={[styles.font, styles.page, style]} {...props} />
+export function PageHeading({ ...props }: Object) {
+  return <RNText marginV-21 text10 {...props} />
 }
 
-export function Heading1({ style, ...props }: Object) {
-  return <NativeText style={[styles.font, styles.h1, style]} {...props} />
+export function Heading1({ ...props }: Object) {
+  return <RNText text20 {...props} />
 }
 
-export function Heading2({ style, ...props }: Object) {
-  return <NativeText style={[styles.font, styles.h2, style]} {...props} />
+export function Heading2({ ...props }: Object) {
+  return <RNText text30 {...props} />
 }
 
-export function Paragraph({ style, ...props }: Object) {
-  return <NativeText style={[styles.font, styles.p, style]} {...props} />
+export function Heading3({ ...props }: Object) {
+  return <RNText text40 {...props} />
 }
 
-export function ErrorText({ style, ...props }: Object) {
-  return <NativeText style={[styles.font, styles.error, style]} {...props} />
+export function Paragraph({ ...props }: Object) {
+  return <Text marginB-18 {...props} />
 }
 
-export function Small({ style, ...props }: Object) {
-  return <NativeText style={[styles.font, styles.small, style]} {...props} />
+export function ErrorText({ ...props }: Object) {
+  return <RNText text80 {...props} />
 }
 
-const styles = StyleSheet.create({
-  font: {
-    fontFamily: env.fontFamily,
-  },
-  page: {
-    fontSize: normalise(28),
-    lineHeight: normalise(34),
-    color: Colours.darkText,
-    fontWeight: 'bold',
-    letterSpacing: -1,
-  },
-  h1: {
-    fontSize: normalise(24),
-    lineHeight: normalise(27),
-    color: Colours.darkText,
-    fontWeight: 'bold',
-    letterSpacing: -1,
-  },
-  h2: {
-    fontSize: normalise(20),
-    lineHeight: normalise(27),
-    color: Colours.darkText,
-    fontWeight: 'bold',
-    letterSpacing: -1.4,
-  },
-  p: {
-    fontSize: normalise(15),
-    lineHeight: normalise(23),
-    color: Colours.lightText,
-  },
-  error: {
-    fontSize: normalise(14),
-    lineHeight: normalise(23),
-    color: 'red',
-  },
-  small: {
-    fontSize: normalise(12),
-    lineHeight: normalise(20),
-  },
-})
+export function Small({ ...props }: Object) {
+  return <RNText text90 {...props} />
+}

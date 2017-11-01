@@ -6,7 +6,11 @@
 import { RLScrollView } from '../../common/rl-content-wrappers'
 import React from 'react'
 
-class Feed extends React.Component {
+type FeedProps = {
+
+}
+
+class Feed extends React.Component<FeedProps> {
   render() {
     return (
       <RLScrollView

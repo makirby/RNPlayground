@@ -6,7 +6,11 @@
 import { RLScrollView } from '../../common/rl-content-wrappers'
 import React from 'react'
 
-class Live extends React.Component {
+type LiveProps = {
+
+}
+
+class Live extends React.Component<LiveProps> {
   render() {
     return (
       <RLScrollView

@@ -8,6 +8,7 @@ import Constants from './lib/constants'
 import FeedScreen from './feed/containers/FeedScreen'
 import LiveScreen from './live/containers/LiveScreen'
 import LoginScreen from './authentication/containers/LoginScreen'
+import RegisterScreen from './authentication/containers/RegisterScreen'
 import NewsScreen from './news/containers/NewsScreen'
 import ProfileScreen from './profile/containers/ProfileScreen'
 import RankingScreen from './statistics/containers/RankingScreen'
@@ -48,6 +49,12 @@ export function registerScreens(store: {}, Provider: {}) {
   Navigation.registerComponent(
     Constants.Screens.LOGIN_SCREEN.screen,
     () => LoginScreen,
+    store,
+    Provider,
+  )
+  Navigation.registerComponent(
+    Constants.Screens.REGISTER_SCREEN.screen,
+    () => RegisterScreen,
     store,
     Provider,
   )
