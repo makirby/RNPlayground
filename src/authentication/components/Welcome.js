@@ -16,7 +16,7 @@ class Welcome extends React.Component<WelcomeProps> {
   onPressLogin = () => {
     this.props.navigator.push(
       {
-        screen: Constants.Screens.LOGIN_SCREEN.screen,
+        ...Constants.Screens.LOGIN_SCREEN,
       },
     )
   }
@@ -24,7 +24,7 @@ class Welcome extends React.Component<WelcomeProps> {
   onPressRegister = () => {
     this.props.navigator.push(
       {
-        screen: Constants.Screens.REGISTER_SCREEN.screen,
+        ...Constants.Screens.REGISTER_SCREEN,
       },
     )
   }

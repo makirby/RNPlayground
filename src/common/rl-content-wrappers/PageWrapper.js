@@ -4,9 +4,9 @@
  */
 
 import { Heading1, Paragraph } from '../rl-style'
-import ScrollView from './RLScrollView'
 import { View } from 'react-native-ui-lib'
 import React from 'react'
+import ScrollView from './RLScrollView'
 
 type PropsType = {
   title?: string,

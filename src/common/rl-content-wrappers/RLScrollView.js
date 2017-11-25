@@ -2,9 +2,9 @@
  * @flow
  */
 
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import { PageHeading, Paragraph } from '../rl-style'
-import { ScrollView, StyleSheet } from 'react-native'
-
+import { StyleSheet } from 'react-native'
 import React from 'react'
 
 type RLScrollViewProps = {
@@ -14,16 +14,18 @@ type RLScrollViewProps = {
   children?: any
 };
 
-const RLScrollView = (props: RLScrollViewProps): React$Node => {
-  const title = !!props.title && <PageHeading>{props.title}</PageHeading>
-  const subtitle = !!props.subtitle && <Paragraph>{props.subtitle}</Paragraph>
-  return (
-    <ScrollView style={[styles.container, props.style]}>
-      {title}
-      {subtitle}
-      {props.children}
-    </ScrollView>
-  )
+class RLScrollView extends React.Component<RLScrollViewProps> {
+  render() {
+    const title = !!this.props.title && <PageHeading>{this.props.title}</PageHeading>
+    const subtitle = !!this.props.subtitle && <Paragraph>{this.props.subtitle}</Paragraph>
+    return (
+      <KeyboardAwareScrollView style={[styles.container, this.props.style]}>
+        {title}
+        {subtitle}
+        {this.props.children}
+      </KeyboardAwareScrollView>
+    )
+  }
 }
 
 const styles = StyleSheet.create({
