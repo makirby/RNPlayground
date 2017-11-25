@@ -53,3 +53,7 @@ buck-out/
 */fastlane/report.xml
 */fastlane/Preview.html
 */fastlane/screenshots
+
+# mobile centeer
+mobile-center-config.json
+MobileCenter-Config.plist
