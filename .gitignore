@@ -54,6 +54,6 @@ buck-out/
 */fastlane/Preview.html
 */fastlane/screenshots
 
-# mobile centeer
-mobile-center-config.json
-MobileCenter-Config.plist
+# app centeer
+appcenter-config.json
+AppCenter-Config.plist
