@@ -3,6 +3,7 @@
  * @flow
  */
 
+import { PageWrapper } from '../../common/rl-content-wrappers'
 import NavBar from '../../lib/config/NavBar'
 import React from 'react'
 import Register from '../components/Register'
@@ -11,16 +12,21 @@ type RegisterScreenProps = {
   navigator: any,
 }
 
-class LoginScreen extends React.Component<RegisterScreenProps> {
+class RegisterScreen extends React.Component<RegisterScreenProps> {
   static navigatorStyle = NavBar.Default.style
 
   render() {
     return (
-      <Register
-        navigator={this.props.navigator}
-      />
+      <PageWrapper
+        title="Register"
+        scrollable
+      >
+        <Register
+          navigator={this.props.navigator}
+        />
+      </PageWrapper>
     )
   }
 }
 
-export default LoginScreen
+export default RegisterScreen

@@ -4,24 +4,34 @@
  */
 
 import { Heading1, Paragraph } from '../rl-style'
+import ScrollView from './RLScrollView'
 import { View } from 'react-native-ui-lib'
 import React from 'react'
 
 type PropsType = {
   title?: string,
   text?: string,
+  scrollable?: boolean,
   children?: any,
   uiProps?: any,
 };
 
-const RLPageWrapper = ({ title, text, children, ...other }: PropsType): React$Node => {
-  const heading = title && <Heading1 marginH-12 marginV-18>{title}</Heading1>
-  return (
-    <View flex flex-1 {...other}>
+const RLPageWrapper = ({ title, text, children, scrollable, ...other }: PropsType): React$Node => {
+  const heading = !!title && <Heading1 marginH-12 marginV-18>{title}</Heading1>
+  const subtitle = !!text && <Paragraph marginH-12>{text}</Paragraph>
+
+  if (scrollable) {
+    return (<ScrollView>
       {heading}
-      <Paragraph marginH-12>
-        {text}
-      </Paragraph>
+      {subtitle}
+      {children}
+    </ScrollView>)
+  }
+
+  return (
+    <View flex {...other}>
+      {heading}
+      {subtitle}
       {children}
     </View>
   )

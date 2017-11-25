@@ -3,7 +3,7 @@
  */
 /* eslint class-methods-use-this: 0 */
 
-import { Colors } from 'react-native-ui-lib'
+import { Colors, ThemeManager } from 'react-native-ui-lib'
 import { Navigation } from 'react-native-navigation'
 import { Platform } from 'react-native'
 import { registerScreens } from './registerScreens'
@@ -24,6 +24,16 @@ Colors.loadColors({
   unknown: '#efefef',
   disabledBackground: '#CCCCCC',
   lightBackground: '#EEEEEE',
+})
+
+ThemeManager.setTheme({
+  primaryColor: Colors.purple30,
+  CTA: {
+    backgroundColor: Colors.purple30,
+    textColor: Colors.light10,
+  },
+  titleColor: Colors.blue10,
+  subtitleColor: Colors.blue40,
 })
 
 class App {
