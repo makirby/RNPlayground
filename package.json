@@ -6,7 +6,8 @@
     "test": "jest",
     "start": "adb reverse tcp:8081 tcp:8081; watchman watch-del-all; react-native start",
     "xcode": "open ios/playground.xcodeproj",
-    "android": "cd android && ./gradlew installDebug",
+    "android": "ENVFILE=.env react-native run-android",
+    "ios": "ENVFILE=.env react-native run-ios",
     "flow": "flow",
     "lint": "eslint ./src --ignore-path .gitignore  --quiet",
     "lint:fix": "eslint ./src --ignore-path .gitignore  --fix"
@@ -23,12 +24,14 @@
     "react": "16.0.0",
     "react-native": "^0.50.4",
     "react-native-blur": "^3.2.2",
+    "react-native-config": "0.9.0",
+    "react-native-fbsdk": "^0.6.3",
     "react-native-interactable": "^0.1.7",
     "react-native-navigation": "^1.1.295",
     "react-native-ui-lib": "github:makirby/react-native-ui-lib"
   },
   "devDependencies": {
-    "babel-core": "^7.0.0",
+    "babel-core": "7.0.0-beta.3",
     "babel-eslint": "^8.0.2",
     "babel-jest": "21.2.0",
     "babel-preset-react-native": "4.0.0",

@@ -57,3 +57,6 @@ buck-out/
 # app centeer
 appcenter-config.json
 AppCenter-Config.plist
+
+# enviroment files ignore
+.env*

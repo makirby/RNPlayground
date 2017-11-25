@@ -10,7 +10,7 @@ type ButtonProps = {
 }
 
 const Button = (props: ButtonProps): React$Node => {
-  return <RNButton {...props} />
+  return <RNButton text60 {...props} />
 }
 
 export default Button
