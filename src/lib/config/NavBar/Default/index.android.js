@@ -17,5 +17,6 @@ const buttons = {
 }
 
 export default {
-  style, buttons,
+  style,
+  buttons,
 }

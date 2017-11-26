@@ -9,7 +9,8 @@ const style = {
   navBarButtonColor: '#007aff',
   screenBackgroundColor: '#ffffff',
 
-  // statusBarTextColorScheme : Constants.Colors.statusBarColor, // make sure that in Xcode > project > Info.plist, the property View controller-based status bar appearance is set to YES
+  // statusBarTextColorScheme : Constants.Colors.statusBarColor,
+  // make sure that in Xcode > project > Info.plist, the property View controller-based status bar appearance is set to YES
 }
 
 const buttons = {
@@ -17,5 +18,8 @@ const buttons = {
 }
 
 export default {
-  style, buttons,
+  style,
+  buttons,
+  drawUnderNavBar: true,
+  navBarTranslucent: true,
 }

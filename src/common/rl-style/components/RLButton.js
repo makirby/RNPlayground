@@ -1,4 +1,5 @@
 /**
+ * Set some defaults on buttons
  * @flow
  */
 
@@ -10,7 +11,7 @@ type ButtonProps = {
 }
 
 const Button = (props: ButtonProps): React$Node => {
-  return <RNButton text60 {...props} />
+  return <RNButton text60 size="medium" {...props} />
 }
 
 export default Button
