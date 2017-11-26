@@ -30,6 +30,7 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		8BA87F96A26E4983B2540F50 /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F0D34E7970474880FD3299 /* libReactNativeNavigation.a */; };
 		9CAB58353DAE41B9A47C965A /* libAppCenterReactNativeCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B2DD0C25C84B1EA4C8403B /* libAppCenterReactNativeCrashes.a */; };
+		B6AA25D1C6BA4F3DB4EBD935 /* libAppCenterReactNativePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 708CCAF455C741968AD1F43F /* libAppCenterReactNativePush.a */; };
 		D18B8642312649348AB9FC47 /* libRNBlur.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 993FBDD459DE4E6A81AEA5A9 /* libRNBlur.a */; };
 		D83A8C957F0247E0A0AF2DC4 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A5E31D79B24718B27E04DB /* libRCTActionSheet.a */; };
 		E07C514CD0FB4C13AF7F5EA9 /* libInteractable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED89318AA7A4B1888C2A6D1 /* libInteractable.a */; };
@@ -260,6 +261,13 @@
 			remoteGlobalIDString = EB2648DF1C7BE17A00B8F155;
 			remoteInfo = ReactNativeConfig;
 		};
+		46DC23A11FCB186400796E1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF500FB4EACA489896C3C556 /* AppCenterReactNativePush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BA189FAA1EEE74F100CAD13F;
+			remoteInfo = AppCenterReactNativePush;
+		};
 		46DC88C91FC9D3CC00FB0251 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BA426D6D2DA648BE83F542DF /* RCTFBSDK.xcodeproj */;
@@ -374,6 +382,7 @@
 		60DB9056CCE8461D80B94ECC /* libRCTFBSDK.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTFBSDK.a; sourceTree = "<group>"; };
 		66B8BD193E1F436A91E7A09A /* Interactable.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = Interactable.xcodeproj; path = "../node_modules/react-native-interactable/ios/Interactable.xcodeproj"; sourceTree = "<group>"; };
 		6798BB2DB6CE1163DB7300C1 /* Pods-rlmobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rlmobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rlmobile/Pods-rlmobile.debug.xcconfig"; sourceTree = "<group>"; };
+		708CCAF455C741968AD1F43F /* libAppCenterReactNativePush.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAppCenterReactNativePush.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		7B120C16D191C9C045680460 /* Pods-rlmobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rlmobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-rlmobile/Pods-rlmobile.release.xcconfig"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -386,6 +395,7 @@
 		BA426D6D2DA648BE83F542DF /* RCTFBSDK.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTFBSDK.xcodeproj; path = "../node_modules/react-native-fbsdk/ios/RCTFBSDK.xcodeproj"; sourceTree = "<group>"; };
 		C38E253C2BD94B95AECCEB66 /* AppCenterReactNative.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = AppCenterReactNative.xcodeproj; path = ../node_modules/appcenter/ios/AppCenterReactNative.xcodeproj; sourceTree = "<group>"; };
 		D4F0D34E7970474880FD3299 /* libReactNativeNavigation.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativeNavigation.a; sourceTree = "<group>"; };
+		EF500FB4EACA489896C3C556 /* AppCenterReactNativePush.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = AppCenterReactNativePush.xcodeproj; path = "../node_modules/appcenter-push/ios/AppCenterReactNativePush.xcodeproj"; sourceTree = "<group>"; };
 		F6107CC79AD33F60497015C9 /* libPods-rlmobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rlmobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2F8317C0E84585ADC22763 /* AppCenter-Config.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "AppCenter-Config.plist"; path = "rlmobile/AppCenter-Config.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -416,6 +426,7 @@
 				9CAB58353DAE41B9A47C965A /* libAppCenterReactNativeCrashes.a in Frameworks */,
 				D83A8C957F0247E0A0AF2DC4 /* libRCTActionSheet.a in Frameworks */,
 				67AF34F11F57498D8CE372CA /* libRCTFBSDK.a in Frameworks */,
+				B6AA25D1C6BA4F3DB4EBD935 /* libAppCenterReactNativePush.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +567,7 @@
 				A7B2DD0C25C84B1EA4C8403B /* libAppCenterReactNativeCrashes.a */,
 				A0A5E31D79B24718B27E04DB /* libRCTActionSheet.a */,
 				60DB9056CCE8461D80B94ECC /* libRCTFBSDK.a */,
+				708CCAF455C741968AD1F43F /* libAppCenterReactNativePush.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -572,6 +584,14 @@
 			isa = PBXGroup;
 			children = (
 				46DC23021FC9EE9E00796E1C /* libReactNativeConfig.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46DC239E1FCB186300796E1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46DC23A21FCB186400796E1C /* libAppCenterReactNativePush.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -658,6 +678,7 @@
 				A720B415B9104BAB86C7859B /* AppCenterReactNativeCrashes.xcodeproj */,
 				8C5BD38CA5ED4A7385E14692 /* uilib.xcodeproj */,
 				BA426D6D2DA648BE83F542DF /* RCTFBSDK.xcodeproj */,
+				EF500FB4EACA489896C3C556 /* AppCenterReactNativePush.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -764,6 +785,10 @@
 				{
 					ProductGroup = 46F639651FC9C56B00BE4C17 /* Products */;
 					ProjectRef = A720B415B9104BAB86C7859B /* AppCenterReactNativeCrashes.xcodeproj */;
+				},
+				{
+					ProductGroup = 46DC239E1FCB186300796E1C /* Products */;
+					ProjectRef = EF500FB4EACA489896C3C556 /* AppCenterReactNativePush.xcodeproj */;
 				},
 				{
 					ProductGroup = 460357A61FA7D7270018500C /* Products */;
@@ -1066,6 +1091,13 @@
 			remoteRef = 46DC23011FC9EE9E00796E1C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		46DC23A21FCB186400796E1C /* libAppCenterReactNativePush.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAppCenterReactNativePush.a;
+			remoteRef = 46DC23A11FCB186400796E1C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		46DC88CA1FC9D3CC00FB0251 /* libRCTFBSDK.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1276,6 +1308,7 @@
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
 					"$(SRCROOT)/../node_modules/react-native-ui-lib/ios/uilib",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",
+					"$(SRCROOT)/../node_modules/appcenter-push/ios/AppCenterReactNativePush",
 				);
 				INFOPLIST_FILE = rlmobile/Info.plist;
 				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
@@ -1284,6 +1317,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/rlmobile\"",
 					"\"$(SRCROOT)/rlmobile\"",
 					"\"$(SRCROOT)/rlmobile\"",
 					"\"$(SRCROOT)/rlmobile\"",
@@ -1319,6 +1353,7 @@
 					"$(SRCROOT)/../node_modules/appcenter-crashes/ios/AppCenterReactNativeCrashes",
 					"$(SRCROOT)/../node_modules/react-native-ui-lib/ios/uilib",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",
+					"$(SRCROOT)/../node_modules/appcenter-push/ios/AppCenterReactNativePush",
 				);
 				INFOPLIST_FILE = rlmobile/Info.plist;
 				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
@@ -1327,6 +1362,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/rlmobile\"",
 					"\"$(SRCROOT)/rlmobile\"",
 					"\"$(SRCROOT)/rlmobile\"",
 				);

@@ -1,5 +1,14 @@
 package com.rlmobile;
 
+import android.util.Log;
+
+
+import com.microsoft.appcenter.reactnative.push.AppCenterReactNativePushPackage;
+import com.microsoft.appcenter.reactnative.crashes.AppCenterReactNativeCrashesPackage;
+import com.microsoft.appcenter.reactnative.analytics.AppCenterReactNativeAnalyticsPackage;
+import com.microsoft.appcenter.reactnative.appcenter.AppCenterReactNativePackage;
+import com.microsoft.appcenter.AppCenter;
+
 import com.reactnativenavigation.NavigationApplication;
 import com.facebook.react.ReactPackage;
 
@@ -30,8 +39,9 @@ public class MainApplication extends NavigationApplication {
     // No need to add RnnPackage and MainReactPackage
     return Arrays.<ReactPackage>asList(
       new FBSDKPackage(mCallbackManager),
-       new AppCenterReactNativeCrashesPackage(MainApplication.this, getResources().getString(R.string.appCenterCrashes_whenToSendCrashes)),
-      new AppCenterReactNativeAnalyticsPackage(MainApplication.this, getResources().getString(R.string.appCenterAnalytics_whenToEnableAnalytics)),
+        new AppCenterReactNativePushPackage(MainApplication.this),
+      new AppCenterReactNativeCrashesPackage(MainApplication.this, getResources().getString(R.string.appcenterCrashes_whenToSendCrashes)),
+      new AppCenterReactNativeAnalyticsPackage(MainApplication.this, getResources().getString(R.string.appcenterAnalytics_whenToEnableAnalytics)),
       new AppCenterReactNativePackage(MainApplication.this)
     );
   }

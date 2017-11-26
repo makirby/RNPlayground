@@ -16,6 +16,7 @@
     "appcenter": "^1.0.1",
     "appcenter-analytics": "^1.0.1",
     "appcenter-crashes": "^1.0.1",
+    "appcenter-push": "^1.0.1",
     "immutability-helper": "^2.5.0",
     "mobx": "^3.3.2",
     "mobx-persist": "^0.4.1",

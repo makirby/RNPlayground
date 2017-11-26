@@ -20,5 +20,14 @@ allprojects {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url "$rootDir/../node_modules/react-native/android"
         }
+        // -------------------------------------------------
+        // Add this below the existing maven property above, this is because
+        // Google Play services from 11.2.0 onwards require their dependencies
+        // to be downloaded from Google's Maven repository
+        // -------------------------------------------------
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
     }
 }
