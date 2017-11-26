@@ -5,6 +5,8 @@
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import { PageHeading, Paragraph } from '../rl-style'
 import { StyleSheet } from 'react-native'
+import KeyboardSpacer from 'react-native-keyboard-spacer'
+
 import React from 'react'
 
 type RLScrollViewProps = {
@@ -23,6 +25,7 @@ class RLScrollView extends React.Component<RLScrollViewProps> {
         {title}
         {subtitle}
         {this.props.children}
+        <KeyboardSpacer />
       </KeyboardAwareScrollView>
     )
   }
