@@ -3,9 +3,9 @@
  * @flow
  */
 
-import { Button, Text } from '../../common/rl-style'
+import { Button, Text, TextInput } from '../../common/rl-style'
 import { LoginButton } from 'react-native-fbsdk'
-import { TextInput, View } from 'react-native-ui-lib'
+import { View } from 'react-native-ui-lib'
 import React from 'react'
 
 type RegisterProps = {
@@ -31,10 +31,10 @@ class Register extends React.Component<RegisterProps> {
     return (
       <View flex marginH-24>
         <View flex-1 centerV>
-          <TextInput text50 placeholder="name" />
-          <TextInput text50 placeholder="email" />
-          <TextInput text50 placeholder="password" secureTextEntry />
-          <TextInput text50 placeholder="confirm password" secureTextEntry />
+          <TextInput placeholder="name" />
+          <TextInput placeholder="email" />
+          <TextInput placeholder="password" secureTextEntry />
+          <TextInput placeholder="confirm password" secureTextEntry />
           <Button marginB-12 label="Register Now" onPress={this.onPressRegister} />
           <Text center marginB-12>or</Text>
           <View centerH>

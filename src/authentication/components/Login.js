@@ -3,9 +3,9 @@
  * @flow
  */
 
-import { Button, Text } from '../../common/rl-style'
+import { Button, Text, TextInput } from '../../common/rl-style'
 import { LoginButton } from 'react-native-fbsdk'
-import { TextInput, View } from 'react-native-ui-lib'
+import { View } from 'react-native-ui-lib'
 import React from 'react'
 
 type LoginProps = {
@@ -33,12 +33,12 @@ class Login extends React.Component<LoginProps> {
   render() {
     return (
       <View flex marginH-24>
-        <View flex-1 centerV>
-          <TextInput text50 placeholder="email" />
-          <TextInput text50 placeholder="password" secureTextEntry />
+        <View centerV>
+          <TextInput placeholder="email" />
+          <TextInput placeholder="password" secureTextEntry />
           <Button marginB-12 label="Login Now" onPress={this.onPressLogin} />
           <Text center marginB-12>or</Text>
-          <View centerH>
+          <View centerH marginB12>
             <LoginButton
               onLoginFinished={this.onLoginFinished}
               onLogoutFinished={this.onLogoutFinished}

@@ -14,7 +14,11 @@ type WelcomeScreenProps = {
 }
 
 class WelcomeScreen extends React.Component<WelcomeScreenProps> {
-  static navigatorStyle = NavBar.Default.style
+  static navigatorStyle = {
+    ...NavBar.Default.style,
+    navBarHidden: true,
+  }
+
   render() {
     return (
       <PageWrapper

@@ -1,10 +1,10 @@
 /**
- * # RLPageWrapper.js
+ * # PageWrapper.js
  * @flow
  */
 
+import { ConnectionStatusBar, View } from 'react-native-ui-lib'
 import { Heading1, Paragraph } from '../rl-style'
-import { View } from 'react-native-ui-lib'
 import React from 'react'
 import ScrollView from './RLScrollView'
 
@@ -22,6 +22,7 @@ const RLPageWrapper = ({ title, text, children, scrollable, ...other }: PropsTyp
 
   if (scrollable) {
     return (<ScrollView>
+      {/* <ConnectionStatusBar /> */}
       {heading}
       {subtitle}
       {children}
@@ -30,6 +31,7 @@ const RLPageWrapper = ({ title, text, children, scrollable, ...other }: PropsTyp
 
   return (
     <View flex {...other}>
+      {/* <ConnectionStatusBar /> */}
       {heading}
       {subtitle}
       {children}
